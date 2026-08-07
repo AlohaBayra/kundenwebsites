@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LIVEGANG: alle URLs auf https://e-technikwissmann.de/ umstellen (siehe LIVEGANG.md) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://alohabayra.github.io/kundenwebsites/wissmann-elektrotechnik/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://alohabayra.github.io/kundenwebsites/wissmann-elektrotechnik/impressum.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://alohabayra.github.io/kundenwebsites/wissmann-elektrotechnik/datenschutz.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>
