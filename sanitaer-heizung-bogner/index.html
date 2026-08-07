@@ -17,10 +17,11 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%238a5c00'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Helvetica'>B</text></svg>">
 <style>
 /*
-  Hinweis: Diese Seite verwendet ausschließlich echte Fotos des Betriebs —
-  es gibt keine BEISPIEL-Platzhalterbilder. Die Klasse .beispiel-badge ist daher
-  ungenutzt; falls später Beispielbilder ergänzt werden, blendet die Klasse
-  .beispiele-aus am <body> alle Embleme und Foto-Hinweise aus.
+  BEISPIELBILDER: Drei Motive sind rot markierte Platzhalter (Hero-Portrait,
+  Firmenfahrzeug, Arbeitsszene) und werden durch eigene Fotos ersetzt — ebenso
+  die drei MUSTER-Kundenstimmen. Zum Ausblenden aller roten Embleme, Foto-
+  Hinweise und Muster-Banner: die Klasse "beispiele-aus" am <body> setzen
+  (eine Klasse, ein Schalter).
 */
 :root{
   --ink:#1d1d1f; --ink2:#4b5158; --mut:#86868b;
@@ -84,6 +85,7 @@ h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.015em;font-weight:700}
 .trustline svg{flex:none}
 .stars{color:var(--gold);letter-spacing:.05em;font-size:1rem}
 .hero-fig{position:relative}
+.hero-photo-wrap{position:relative}
 .hero-name{margin-bottom:10px}
 .hero-name strong{display:block;font-size:1.12rem;letter-spacing:-.01em}
 .hero-name span{color:var(--ink2);font-size:.95rem}
@@ -94,6 +96,28 @@ h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.015em;font-weight:700}
 .quali-badge img{width:36px;height:36px;border-radius:50%;object-fit:cover}
 .quali-badge div{font-size:.74rem;line-height:1.3;color:var(--ink)}
 .quali-badge strong{display:block}
+.beispiel-badge{
+  position:absolute; top:18px; left:18px; z-index:4;
+  background:#e01b24; color:#fff;
+  font-weight:900; font-size:.82rem; letter-spacing:.16em;
+  padding:.5rem 1rem; border-radius:8px; text-transform:uppercase;
+  box-shadow:0 6px 18px rgba(224,27,36,.42); pointer-events:none;
+}
+.shotlist{color:#e01b24;font-size:.88rem;line-height:1.45;margin-top:10px}
+.muster-hinweis{background:#e01b24;color:#fff;border-radius:12px;padding:14px 18px;
+  font-size:.95rem;font-weight:600;margin:18px 0 6px}
+.beispiele-aus .beispiel-badge,.beispiele-aus .shotlist,.beispiele-aus .muster-hinweis{display:none}
+.beispiel-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;align-items:start}
+.beispiel-fig{position:relative;border-radius:14px;overflow:hidden;background:var(--sur)}
+.beispiel-fig img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 60%}
+@media(max-width:700px){.beispiel-row{grid-template-columns:1fr}}
+.stimmen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:26px}
+.stimme{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:56px 24px 22px;display:flex;flex-direction:column;gap:12px}
+.stimme .stars{color:var(--gold);letter-spacing:.12em;font-size:1.05rem}
+.stimme blockquote{color:var(--ink);line-height:1.55;font-size:.98rem}
+.stimme footer{color:var(--ink2);font-size:.88rem;margin-top:auto}
+@media(max-width:900px){.stimmen-grid{grid-template-columns:1fr}}
 .hero-card{position:absolute;bottom:-26px;left:-26px;background:#fff;border:1px solid var(--line);
   border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:center;
   box-shadow:0 18px 44px rgba(0,0,0,.10);max-width:88%}
@@ -326,24 +350,24 @@ footer .legal{margin-top:28px;color:var(--ink2);font-size:.85rem}
         <strong>Thomas Bogner</strong>
         <span>Inhaber · Installateur- und Heizungsbauermeister</span>
       </figcaption>
-      <div class="hero-photo">
-        <picture>
-          <source srcset="assets/thomas-bogner-meisterehrung.webp" type="image/webp">
-          <img src="assets/thomas-bogner-meisterehrung.jpg" width="1060" height="1880"
-               alt="Thomas Bogner bei der Meisterehrung der Handwerkskammer für München und Oberbayern mit seiner Urkunde" fetchpriority="high">
-        </picture>
-        <span class="quali-badge">
-          <img src="assets/meistermedaille.jpg" alt="" width="900" height="900">
-          <div><strong>Goldmedaille</strong>HWK München und Oberbayern</div>
-        </span>
-      </div>
-      <div class="hero-card">
-        <img src="assets/vdi-4645-zertifikat.jpg" alt="" width="813" height="1182">
-        <div>
-          <strong>VDI 4645 — Wärmepumpensysteme</strong>
-          <span>Sachkundiger für Planung und Errichtung · geprüft 2025</span>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <picture>
+            <source srcset="assets/beispiel-portrait.webp" type="image/webp">
+            <img src="assets/beispiel-portrait.jpg" width="1060" height="1880"
+                 alt="Beispielbild, nicht Thomas Bogner: Handwerker in blauer Arbeitskleidung als Platzhalter für ein aktuelles Inhaberportrait" fetchpriority="high">
+          </picture>
+          <span class="beispiel-badge">Beispiel</span>
+        </div>
+        <div class="hero-card">
+          <img src="assets/vdi-4645-zertifikat.jpg" alt="" width="813" height="1182">
+          <div>
+            <strong>VDI 4645 — Wärmepumpensysteme</strong>
+            <span>Sachkundiger für Planung und Errichtung · geprüft 2025</span>
+          </div>
         </div>
       </div>
+      <p class="shotlist" style="margin-top:44px">📷 Zu fotografieren: Thomas Bogner halbnah in Arbeitskleidung, Blick in die Kamera — im Technikraum vor einer fertigen Anlage. Hochformat, weiches Tageslicht.</p>
     </figure>
   </div>
 </header>
@@ -485,6 +509,30 @@ footer .legal{margin-top:28px;color:var(--ink2);font-size:.85rem}
       <div class="step"><div class="num">3</div><h3>Planung &amp; Angebot</h3><p>Sie bekommen eine nachvollziehbare Planung und ein klares Angebot — beim Wärmepumpencheck zum Festpreis.</p></div>
       <div class="step"><div class="num">4</div><h3>Umsetzung</h3><p>Einbau, Inbetriebnahme und Übergabe — und auf Wunsch danach die regelmäßige Wartung.</p></div>
     </div>
+    <div class="beispiel-row">
+      <figure>
+        <div class="beispiel-fig">
+          <picture>
+            <source srcset="assets/beispiel-fahrzeug.webp" type="image/webp">
+            <img src="assets/beispiel-fahrzeug.jpg" width="1600" height="1067" loading="lazy"
+                 alt="Beispielbild: weißer Kastenwagen vor einem Gebäude als Platzhalter für das beschriftete Firmenfahrzeug">
+          </picture>
+          <span class="beispiel-badge">Beispiel</span>
+        </div>
+        <figcaption class="shotlist">📷 Zu fotografieren: das beschriftete Firmenfahrzeug, seitlich und komplett im Bild, vor Halle oder Haus. Querformat.</figcaption>
+      </figure>
+      <figure>
+        <div class="beispiel-fig">
+          <picture>
+            <source srcset="assets/beispiel-arbeit.webp" type="image/webp">
+            <img src="assets/beispiel-arbeit.jpg" width="1000" height="1498" loading="lazy"
+                 alt="Beispielbild: Handwerker arbeitet an einem Heizkörper als Platzhalter für ein Foto von Thomas Bogner bei der Arbeit">
+          </picture>
+          <span class="beispiel-badge">Beispiel</span>
+        </div>
+        <figcaption class="shotlist">📷 Zu fotografieren: Thomas Bogner bei der Arbeit — am Heizkörper, an der Wärmepumpe oder beim Aufmaß. Hände und Gesicht im Bild.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -525,6 +573,38 @@ footer .legal{margin-top:28px;color:var(--ink2);font-size:.85rem}
         <figcaption><strong>Wärmepumpe am Bestandsgebäude</strong>Platzsparend an der Hauswand montiert.</figcaption>
       </figure>
     </div>
+  </div>
+</section>
+
+<!-- MUSTER-KUNDENSTIMMEN: Diese drei Karten sind Beispiele und zeigen, welche
+     Bewertungen gesammelt werden sollen. Vor dem Livegang durch echte, wortgetreue
+     Google-Bewertungen (Name + Datum) ersetzen — oder die Sektion entfernen. -->
+<section id="kundenstimmen">
+  <div class="wrap">
+    <p class="kicker">Kundenstimmen</p>
+    <h2>So sollen Kunden hier zu Wort kommen.</h2>
+    <p class="muster-hinweis">MUSTER — Diese drei Stimmen sind nicht echt. Sie zeigen, welche Bewertungen wir von zufriedenen Kunden brauchen, und werden vor dem Livegang durch echte Google-Bewertungen ersetzt.</p>
+    <div class="stimmen-grid">
+      <article class="stimme">
+        <span class="beispiel-badge">Beispiel</span>
+        <p class="stars" aria-hidden="true">★★★★★</p>
+        <blockquote>„Vom Wärmepumpencheck bis zur fertigen Anlage hat Herr Bogner alles selbst geplant und eingebaut. Der Festpreis stand von Anfang an — und jetzt wird endlich jeder Raum richtig warm."</blockquote>
+        <footer>Musterkunde aus Eichendorf · Wärmepumpe im Altbau</footer>
+      </article>
+      <article class="stimme">
+        <span class="beispiel-badge">Beispiel</span>
+        <p class="stars" aria-hidden="true">★★★★★</p>
+        <blockquote>„Unser Bad wurde in zwei Wochen komplett saniert. Sauber gearbeitet, jeden Abend aufgeräumt, und am Ende hat alles so gepasst, wie es besprochen war."</blockquote>
+        <footer>Musterkundin aus Landau · Badsanierung</footer>
+      </article>
+      <article class="stimme">
+        <span class="beispiel-badge">Beispiel</span>
+        <p class="stars" aria-hidden="true">★★★★★</p>
+        <blockquote>„Freitagabend fiel die Heizung aus, Samstagvormittag lief sie wieder. Seitdem macht der Betrieb bei uns auch die jährliche Wartung."</blockquote>
+        <footer>Musterkunde aus Arnstorf · Reparatur &amp; Wartung</footer>
+      </article>
+    </div>
+    <p class="shotlist">✍️ So kommen die echten Stimmen zusammen: zufriedene Kunden direkt nach der Übergabe um eine Google-Bewertung bitten — Link zum Google-Profil genügt. Drei Sätze zu Anlass, Ablauf und Ergebnis reichen völlig.</p>
   </div>
 </section>
 
