@@ -111,8 +111,8 @@ h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.015em;font-weight:700}
 /* ---------- Vertrauensleiste ---------- */
 .trustbar{background:var(--sur);padding:44px 0}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
-.trust-grid article h3{font-size:1.02rem;margin-bottom:4px;display:flex;align-items:center;gap:9px}
-.trust-grid article h3 svg{color:var(--acc);flex:none}
+.trust-grid article h2{font-size:1.02rem;margin-bottom:4px;display:flex;align-items:center;gap:9px}
+.trust-grid article h2 svg{color:var(--acc);flex:none}
 .trust-grid article p{color:var(--ink2);font-size:.92rem}
 @media(max-width:900px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.trust-grid{grid-template-columns:1fr}}
@@ -142,15 +142,15 @@ h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.015em;font-weight:700}
   background:var(--acc);
   -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/100%;
           mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/100%}
-.check-note{font-size:.9rem;color:var(--mut);margin-top:14px}
+.check-note{font-size:.9rem;color:var(--ink2);margin-top:14px}
 .check-fig img{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover}
-.check-fig figcaption{font-size:.85rem;color:var(--mut);margin-top:10px}
+.check-fig figcaption{font-size:.85rem;color:var(--ink2);margin-top:10px}
 @media(max-width:900px){.check-grid{grid-template-columns:1fr;gap:36px}}
 
 /* ---------- Über den Inhaber ---------- */
 .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:start}
 .about-fig img{border-radius:18px}
-.about-fig figcaption{font-size:.85rem;color:var(--mut);margin-top:10px}
+.about-fig figcaption{font-size:.85rem;color:var(--ink2);margin-top:10px}
 .about p{color:var(--ink2);margin-bottom:16px}
 .about p.lead{color:var(--ink);font-size:1.12rem}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:36px}}
@@ -189,7 +189,7 @@ h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.015em;font-weight:700}
 .brands{padding:56px 0;border-top:1px solid var(--line)}
 .brand-row{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;margin-top:26px}
 .brand-row img{height:64px;width:auto}
-.brand-row span{color:var(--mut);font-size:1.3rem;font-weight:600;letter-spacing:-.01em}
+.brand-row span{color:var(--ink2);font-size:1.3rem;font-weight:600;letter-spacing:-.01em}
 
 /* ---------- FAQ ---------- */
 .faq details{border-bottom:1px solid var(--line);padding:6px 0}
@@ -221,15 +221,15 @@ h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.015em;font-weight:700}
   padding:12px 14px;font:inherit;font-size:1rem;background:#fff;color:var(--ink)}
 .form textarea{min-height:120px;resize:vertical}
 .form button{margin-top:20px;width:100%;justify-content:center}
-.form .hint{font-size:.82rem;color:var(--mut);margin-top:10px}
+.form .hint{font-size:.82rem;color:var(--ink2);margin-top:10px}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
 
 /* ---------- Footer ---------- */
 footer{padding:56px 0 120px;color:var(--ink2);font-size:.92rem}
 .foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.foot-grid a{color:var(--ink2);text-decoration:none}
+.foot-grid a{color:var(--ink2);text-decoration:none;display:inline-block;padding:5px 0}
 .foot-grid a:hover{color:var(--acc)}
-footer .legal{margin-top:28px;color:var(--mut);font-size:.85rem}
+footer .legal{margin-top:28px;color:var(--ink2);font-size:.85rem}
 
 /* ---------- Mobile Anruf-Leiste ---------- */
 .callbar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;gap:10px;
@@ -301,6 +301,7 @@ footer .legal{margin-top:28px;color:var(--mut);font-size:.85rem}
   </div>
 </nav>
 
+<main>
 <header class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
@@ -350,19 +351,19 @@ footer .legal{margin-top:28px;color:var(--mut);font-size:.85rem}
 <div class="trustbar" role="region" aria-label="Vertrauen">
   <div class="wrap trust-grid">
     <article>
-      <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>Jahresbestmeister</h3>
+      <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>Jahresbestmeister</h2>
       <p>Meisterprüfung 2013 als Bester von München und Oberbayern — mit Goldmedaille der Handwerkskammer.</p>
     </article>
     <article>
-      <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>VDI 4645 zertifiziert</h3>
+      <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>VDI 4645 zertifiziert</h2>
       <p>Sachkundige Person für Wärmepumpensysteme — Planung und Errichtung, geprüft im Januar 2025.</p>
     </article>
     <article>
-      <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>5,0 Sterne bei Google</h3>
+      <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>5,0 Sterne bei Google</h2>
       <p>Bestbewertung im Google-Unternehmensprofil (Stand August 2026).</p>
     </article>
     <article>
-      <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Fest in der Region</h3>
+      <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Fest in der Region</h2>
       <p>Zuhause in Eichendorf, im Einsatz im Umkreis von rund 50 Kilometern — Niederbayern.</p>
     </article>
   </div>
@@ -658,6 +659,8 @@ footer .legal{margin-top:28px;color:var(--mut);font-size:.85rem}
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div class="wrap">
