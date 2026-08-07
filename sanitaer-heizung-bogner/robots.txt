@@ -1,0 +1,8 @@
+# Vorschau-Umgebung: nicht indexieren
+User-agent: *
+Disallow: /
+
+# LIVEGANG: durch folgende Fassung ersetzen
+# User-agent: *
+# Allow: /
+# Sitemap: https://www.sanitaer-heizung-bogner.de/sitemap.xml
