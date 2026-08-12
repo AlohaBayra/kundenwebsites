@@ -15,176 +15,133 @@ body{font-family:-apple-system,"SF Pro Display","Helvetica Neue",Inter,sans-seri
 header{padding:44px 0 8px}
 h1{font-size:clamp(30px,3.4vw,42px);letter-spacing:-.03em;line-height:1.06;margin-bottom:10px}
 .intro{color:var(--sekundaer);margin-bottom:30px}
-h2{font-size:22px;letter-spacing:-.02em;margin:42px 0 12px;color:var(--akzent)}
-.punkt{border-bottom:1px solid var(--linie);padding:14px 0}
-.punkt strong{display:block;font-size:18.5px;margin-bottom:3px}
-.punkt p{color:var(--sekundaer);font-size:17px}
+h2{font-size:22px;letter-spacing:-.02em;margin:46px 0 6px;color:var(--akzent)}
+.teil-sub{color:var(--grau);font-size:15.5px;margin-bottom:14px}
+.punkt{border-bottom:1px solid var(--linie);padding:16px 0}
+.punkt strong{display:block;font-size:18.5px;margin-bottom:6px}
+.punkt p{color:var(--sekundaer);font-size:17px;margin:3px 0}
 .punkt p b{color:var(--text)}
-.fund{border-left:3px solid var(--linie);padding:2px 0 2px 18px;margin:18px 0}
-.fund strong{display:block;font-size:18.5px;margin-bottom:3px}
-.fund p{color:var(--sekundaer);font-size:17px;margin-bottom:6px}
-.fund p b{color:var(--text)}
+.zeile{display:block;padding-left:0}
+.zeile .label{display:inline-block;min-width:184px;color:var(--text);font-weight:600}
 .offen{background:#f5f5f7;border-radius:14px;padding:22px 24px;margin:40px 0 60px}
 .offen h2{margin-top:0;color:var(--text)}
 .offen li{margin:8px 0 8px 20px;color:var(--sekundaer);font-size:17px}
+.offen p{color:var(--grau);font-size:15px;margin-top:12px}
 @media print{ .offen{background:none;border:1px solid var(--linie)} body{font-size:14px} }
+@media(max-width:560px){ .zeile .label{display:block;min-width:0} }
 </style>
 </head>
 <body>
 <header class="wrap">
   <h1>Was die neue Website besser macht.</h1>
-  <p class="intro">Alle Punkte sind bereits umgesetzt und in der Vorschau sichtbar — nichts davon ist ein Versprechen für später. Den direkten Bildvergleich alt/neu gibt es auf der Vergleichsseite.</p>
+  <p class="intro">Alle Vorher-Angaben sind am 12.&nbsp;August 2026 direkt an der live geschalteten Seite kirschner-elektro-aufhausen.de geprüft worden (Quelltext und Browser-Ansicht). Alle Neu-Punkte sind bereits umgesetzt und in der Vorschau sichtbar — nichts davon ist ein Versprechen für später. Den direkten Bildvergleich alt/neu gibt es auf der Vergleichsseite.</p>
 </header>
 <main class="wrap">
 
-  <h2>1 · Was Kunden sofort sehen</h2>
+  <h2>Teil 1 · Was auf Ihrer jetzigen Seite fehlt oder nicht funktioniert</h2>
+  <p class="teil-sub">Jeder Punkt ist an der heutigen Live-Seite belegt.</p>
+
   <div class="punkt">
-    <strong>Auf dem Handy zählt der erste Bildschirm — jetzt gehört er Ihnen.</strong>
-    <p>Vorher: Auf der alten Seite verdeckte ein Zustimmungsfenster alles, und darüber stand der fremde Markenname „Home &amp; Tech". Jetzt: Ohne zu scrollen sieht der Kunde Ihren Namen, „Elektriker mit eigenem Fachgeschäft in Aufhausen", zwei Anruf-Möglichkeiten und den Hinweis „Keine Warteschleife". <b>Für Sie heißt das:</b> Die meisten Kunden suchen mit dem Handy — und entscheiden in den ersten Sekunden, ob sie bleiben.</p>
+    <strong>Ein Zustimmungsfenster verdeckt den ersten Eindruck.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> Beim ersten Besuch legt sich ein Privatsphäre-Fenster über die Seite — auf dem Handy verdeckt es fast den ganzen Bildschirm. Nötig ist es, weil die Seite Dienste fremder Anbieter lädt (Einwilligungs-Dienst, Google&nbsp;Maps, zwei fremde Skript-Server).</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Es wird nichts von fremden Servern geladen — das Fenster entfällt ersatzlos, die Datenschutzerklärung passt exakt zu dieser einfachen Technik.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Das Erste, was ein Kunde sieht, ist Ihr Geschäft — nicht ein Rechtstext.</p>
   </div>
+
   <div class="punkt">
-    <strong>Ihre Google-Bewertungen stehen auf der Startseite.</strong>
-    <p>Vorher: 4,7 von 5 Sternen bei Google — und die alte Seite hat sie nie erwähnt. Jetzt: Alle sechs Bewertungen mit Text stehen wortgetreu mit Namen auf der Seite, als fester Text, der auch ohne Zusatztechnik lesbar ist. <b>Für Sie heißt das:</b> Wer Sie nicht kennt, sieht sofort, dass andere Ihnen vertrauen.</p>
+    <strong>Der fremde Markenname „Home &amp; Tech" steht über Ihrem.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> In der Kopfzeile prangt das Logo der Baukasten-Marke „Home &amp; Tech — Heimelektronik vom Besten", und im Startbereich wirbt der Text für „die Welt von Home &amp; Tech".</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Es gibt nur noch einen Namen: Elektro Kirschner, Aufhausen.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Kunden merken sich Ihren Betrieb — nicht die Marke eines Baukastens.</p>
   </div>
+
   <div class="punkt">
-    <strong>Die Bewertungen kann man jetzt wirklich lesen.</strong>
-    <p>Vorher: Das Bewertungs-Band wechselte alle 5 Sekunden — zu schnell zum Mitlesen. Jetzt: 8 Sekunden pro Bewertung, beim Berühren mit dem Finger hält es an, und kleine Punkte zeigen, wo man gerade ist. Erfundene Sternchen gibt es nicht: Angezeigt wird nur der belegte Schnitt von 4,7. <b>Für Sie heißt das:</b> Das Lob Ihrer Kunden kommt tatsächlich an — und alles davon ist nachprüfbar echt.</p>
+    <strong>Ihre Google-Bewertungen kommen nicht vor.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> 4,7 von 5 Sternen bei Google — und auf der Seite steht kein Wort davon; im gesamten Quelltext kommt „Bewertung" nicht vor.</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Alle sechs Google-Bewertungen stehen wortgetreu mit Namen als fester, ohne Zusatztechnik lesbarer Text auf der Startseite. Angezeigt wird nur der belegte Schnitt von 4,7 — nichts ist erfunden.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Wer Sie nicht kennt, sieht sofort, dass andere Ihnen vertrauen.</p>
   </div>
+
+  <div class="punkt">
+    <strong>Ihre Telefonnummer kann niemand antippen.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> Die 09956/395 steht als bloßer Text im Fußbereich — auf der ganzen Seite gibt es keinen einzigen antippbaren Telefon-Link, und keine Stelle fordert zum Anruf auf.</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Die Nummer ist an 14 Stellen antippbar, auf dem Handy klebt unten eine feste Leiste mit „☎&nbsp;09956&nbsp;395", und direkt am Anruf-Knopf steht „Keine Warteschleife — Sie sprechen sofort mit jemandem."</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Der kürzeste Weg vom Interessenten zum Klingeln Ihres Telefons.</p>
+  </div>
+
+  <div class="punkt">
+    <strong>Die Öffnungszeiten stehen nur ganz unten — und nur per Skript.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> Die Zeiten erscheinen ausschließlich im Fußbereich, und dort erst durch ein Skript — im ausgelieferten HTML ist die Stelle leer. Dienste, die kein Skript ausführen (viele KI-Suchsysteme und Verzeichnis-Crawler), sehen keine Öffnungszeiten.</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> „Mo–Fr 7:30–18:00&nbsp;Uhr, Sa 7:30–11:30&nbsp;Uhr" steht voll ausgeschrieben als fester Text an jeder wichtigen Stelle.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Weniger vergebliche Anrufe außerhalb der Zeiten, mehr Laufkundschaft zur richtigen Zeit.</p>
+  </div>
+
+  <div class="punkt">
+    <strong>Zwei Menüpunkte führen ins Leere — und die halben Leistungen fehlen.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> Die Menüpunkte „Marken" und „Leistungen" zeigen auf Abschnitte, die es im Dokument gar nicht gibt — ein Klick bewegt nichts. Photovoltaik, Wallbox, Reparatur und Notdienst kommen im gesamten Text nicht vor.</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Sieben Leistungsbereiche von Elektroinstallation über Photovoltaik bis Ersatzteile &amp; Zubehör, und jeder Menüpunkt führt zu echtem Inhalt.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Wer „Photovoltaik" sucht, erfährt endlich, dass Sie das machen.</p>
+  </div>
+
+  <div class="punkt">
+    <strong>Die Startseite zeigt Vorlagen-Fotos statt Ihres Betriebs.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> Die drei großen Wechselbilder stammen aus dem Standard-Bestand der Vorlage (im Quelltext als „default"-Bilder des Baukastens erkennbar), das „Über uns"-Bild ist eine Logo-Grafik. Ihre echten Laden-Fotos liegen nur auf einer Unterseite.</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Laden, Schaufenster und Ausstellung stehen direkt auf der Startseite unter „Kommen Sie einfach vorbei"; die verbleibenden Beispielbilder sind rot als „Beispiel" markiert, bis Ihre echten Fotos da sind.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Kunden erkennen Ihr Haus an der Eichendorfer Straße wieder — und kaufen beim Menschen, nicht bei einer Vorlage.</p>
+  </div>
+
+  <div class="punkt">
+    <strong>Google kann die Seite kaum lesen.</strong>
+    <p class="zeile"><span class="label">Auf Ihrer Seite heute:</span> Keine Hauptüberschrift (h1), fünf Bilder ohne Bildbeschreibung, die beiden Steuerdateien für Suchmaschinen (robots.txt, sitemap.xml) sind leer, und maschinenlesbare Firmendaten gibt es nicht.</p>
+    <p class="zeile"><span class="label">Auf der neuen Seite:</span> Saubere Überschriften mit Ortsbezug, beschriebene Bilder und die kompletten Firmendaten — Adresse, Öffnungszeiten, Leistungen, Marken — zusätzlich in der Datenform, die Google direkt versteht.</p>
+    <p class="zeile"><span class="label">Für Sie heißt das:</span> Bessere Chancen bei „Elektriker in der Nähe" — und ein Suchtreffer, der mit Öffnungszeiten und Details erscheinen kann.</p>
+  </div>
+
+  <h2>Teil 2 · Was neu dazugekommen ist</h2>
+  <p class="teil-sub">Diese Dinge gab es auf der bisherigen Seite nicht — sie sind Ergänzungen, keine Reparaturen.</p>
+
   <div class="punkt">
     <strong>Ihr Betrieb auf einen Blick.</strong>
-    <p>Neu ist ein Kasten direkt unter dem Seitenanfang: Betrieb, Inhaber, Adresse, Telefon, Öffnungszeiten, Leistungen, Marken und Einzugsgebiet in acht Zeilen. <b>Für Sie heißt das:</b> Auch der eilige Kunde hat in zehn Sekunden alles Wichtige — und genau diese Zeilen liest auch Google mit.</p>
+    <p>Ein Kasten direkt unter dem Seitenanfang: Betrieb, Inhaber, Adresse, Telefon, Öffnungszeiten, Leistungen, Marken und Einzugsgebiet in acht Zeilen. Auch der eilige Kunde hat in zehn Sekunden alles Wichtige — und genau diese Zeilen liest auch Google mit.</p>
   </div>
   <div class="punkt">
-    <strong>Öffnungszeiten sofort sichtbar — plus Live-Anzeige.</strong>
-    <p>Vorher: Die Öffnungszeiten standen nur ganz unten im Fußbereich und wurden erst per Zusatztechnik eingeblendet — für Suchmaschinen unsichtbar, auf dem Handy erst nach langem Scrollen. Jetzt: „Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr" steht voll ausgeschrieben an jeder wichtigen Stelle, und die Seite zeigt automatisch „Jetzt geöffnet – bis 18:00" oder „Jetzt geschlossen – wieder ab Montag 7:30". <b>Für Sie heißt das:</b> Weniger vergebliche Anrufe außerhalb der Zeiten, mehr Laufkundschaft zur richtigen Zeit.</p>
+    <strong>Live-Anzeige „Jetzt geöffnet".</strong>
+    <p>Die Seite zeigt automatisch „Jetzt geöffnet – bis 18:00" oder „Jetzt geschlossen – wieder ab Montag 7:30". Der Kunde weiß vor dem Anruf, ob sich der Weg lohnt.</p>
   </div>
   <div class="punkt">
-    <strong>Ihr echtes Geschäft, Ihr Name, Ihr Gesicht.</strong>
-    <p>Die Fotos von Laden, Schaufenster und Ausstellung haben eine eigene Rubrik „Kommen Sie einfach vorbei", die Seite ist auf Sie als Inhaber aufgebaut, und statt Agentur-Modelfotos sind die Platzhalter rot als „Beispiel" markiert, bis Ihre echten Fotos da sind. <b>Für Sie heißt das:</b> Kunden kaufen beim Menschen — und erkennen Ihr Haus an der Eichendorfer Straße wieder.</p>
-  </div>
-
-  <h2>2 · Wie Kunden Sie erreichen</h2>
-  <div class="punkt">
-    <strong>Anrufen ist überall ein Fingertipp.</strong>
-    <p>Die Nummer ist an jeder Stelle antippbar, in der Kopfleiste sitzt ein grüner Telefon-Knopf, und auf dem Handy klebt unten eine feste Leiste, in der die große Schaltfläche „☎ 09956 395" heißt — die Nummer selbst ist der Knopf. <b>Für Sie heißt das:</b> Der kürzeste Weg vom Interessenten zum Klingeln Ihres Telefons.</p>
+    <strong>Vier Einstiegswege für vier Anliegen.</strong>
+    <p>Direkt unter dem Seitenanfang: „Gerät defekt?", „Bauen oder sanieren?", „Eigener Strom?", „Lieber persönlich?". Ob Waschmaschinen-Notfall oder Hausbau — jeder findet in einer Sekunde seinen Weg.</p>
   </div>
   <div class="punkt">
-    <strong>„Keine Warteschleife – Sie sprechen sofort mit jemandem."</strong>
-    <p>Dieser Satz steht jetzt direkt unter dem Anruf-Knopf. <b>Für Sie heißt das:</b> Genau der Unterschied zu jeder Hotline und jedem Onlineshop — ausgesprochen, statt vorausgesetzt.</p>
+    <strong>Ein Abschnitt „Wo wir arbeiten".</strong>
+    <p>Eichendorf mit seinen Ortsteilen, Simbach bei Landau, Landau a.&nbsp;d.&nbsp;Isar, Pilsting und Arnstorf stehen ausdrücklich auf der Seite, dazu „Landkreis Dingolfing-Landau, Niederbayern". Die bisherige Seite nannte als Ort nur Eichendorf-Aufhausen — jetzt kann Sie auch finden, wer im Nachbarort sucht.</p>
   </div>
   <div class="punkt">
-    <strong>Für jeden Besucher ein passender Einstieg.</strong>
-    <p>Direkt unter dem Seitenanfang stehen vier Wege: „Gerät defekt?", „Bauen oder sanieren?", „Eigener Strom?", „Lieber persönlich?". <b>Für Sie heißt das:</b> Ob Waschmaschinen-Notfall oder Hausbau — jeder findet in einer Sekunde seinen Weg zu Ihnen.</p>
+    <strong>Vorbereitet auf die Suche per KI.</strong>
+    <p>Immer mehr Menschen fragen ChatGPT &amp; Co. nach einem Handwerker. Die Seite hat dafür einen eigenen Steckbrief in Textform (Leistungen, Öffnungszeiten, Einzugsgebiet, häufige Fragen), und der Livegang-Plan sieht vor, die KI-Suchdienste ausdrücklich zuzulassen.</p>
   </div>
   <div class="punkt">
-    <strong>Das Kontaktformular sagt ehrlich, was es tut.</strong>
-    <p>Vorher: ein Formular, dessen Absende-Knopf kommentarlos das E-Mail-Programm öffnete — für viele ein verwirrender Moment. Jetzt: Der Knopf heißt „E-Mail-Programm öffnen", darüber steht genau das als Hinweis samt Ausweich-Tipp „rufen Sie einfach an", die Telefonnummer ist Pflichtfeld, die Nachricht optional. Daneben steht als zweiter Knopf gleich die Nummer. <b>Für Sie heißt das:</b> Kein Kunde bleibt ratlos zurück — und Sie können jeden zurückrufen, weil die Nummer immer dabei ist.</p>
+    <strong>Gepflegte Link-Vorschau beim Teilen.</strong>
+    <p>Wird der Link in WhatsApp oder auf Facebook geteilt, erscheint eine Vorschau mit Ihrer Ladenfront und einer Kurzbeschreibung mit Öffnungszeiten. Jede Empfehlung von Kunde zu Kunde wirkt gepflegt statt kahl.</p>
   </div>
   <div class="punkt">
-    <strong>Große Knöpfe, klare Aufforderungen.</strong>
-    <p>Alle Kontakt-Knöpfe sind daumengroß, und an fünf Stellen der Seite steht eine kurze Aufforderung zur richtigen Zeit — etwa „Schritt 1 ist ein Anruf: 09956 395" nach dem Ablauf oder „Route planen" bei den Laden-Fotos. <b>Für Sie heißt das:</b> Die Seite informiert nicht nur, sie führt zum Anruf.</p>
-  </div>
-
-  <h2>3 · Wie Sie gefunden werden</h2>
-  <div class="punkt">
-    <strong>Google kann die Seite jetzt lesen.</strong>
-    <p>Vorher: keine Hauptüberschrift, leere Bildbeschreibungen, zwei leere Steuerdateien für Suchmaschinen. Jetzt: saubere Überschriften mit Ortsbezug, beschriebene Bilder und die kompletten Firmendaten — Adresse, Öffnungszeiten, Leistungen, Marken — zusätzlich in der Datenform hinterlegt, die Google direkt versteht. <b>Für Sie heißt das:</b> Bessere Chancen bei „Elektriker in der Nähe" — und ein Eintrag, der in der Google-Suche mit Öffnungszeiten und Details erscheinen kann.</p>
-  </div>
-  <div class="punkt">
-    <strong>Ein eigener Abschnitt „Wo wir arbeiten".</strong>
-    <p>Eichendorf mit seinen Ortsteilen, Simbach bei Landau, Landau a. d. Isar, Pilsting und Arnstorf stehen jetzt ausdrücklich auf der Seite, dazu „Landkreis Dingolfing-Landau, Niederbayern". <b>Für Sie heißt das:</b> Auch wer im Nachbarort sucht, kann Sie finden — nicht nur wer „Aufhausen" eintippt.</p>
-  </div>
-  <div class="punkt">
-    <strong>Vorbereitet auf die Suche von morgen.</strong>
-    <p>Immer mehr Menschen fragen ChatGPT &amp; Co. nach einem Handwerker. Die Seite hat dafür einen eigenen Steckbrief in Textform (Leistungen, Öffnungszeiten, Einzugsgebiet, häufige Fragen), und der Livegang-Plan sieht vor, die KI-Suchdienste ausdrücklich zuzulassen. <b>Für Sie heißt das:</b> Wenn jemand eine KI nach einem Elektriker bei Eichendorf fragt, gibt es eine verlässliche Quelle mit Ihren Daten.</p>
-  </div>
-  <div class="punkt">
-    <strong>Beim Teilen sieht die Seite gut aus.</strong>
-    <p>Wird der Link in WhatsApp oder auf Facebook geteilt, erscheint eine Vorschau mit Ihrer Ladenfront und einer Kurzbeschreibung mit Öffnungszeiten. <b>Für Sie heißt das:</b> Jede Empfehlung von Kunde zu Kunde wirkt gepflegt statt kahl.</p>
-  </div>
-  <div class="punkt">
-    <strong>Schnell, ohne Ballast.</strong>
-    <p>Die Seite besteht aus wenigen kleinen Dateien ohne Baukasten-System und lädt praktisch sofort — im unabhängigen Google-Messverfahren erreicht sie 97–99 von 100 Punkten für Geschwindigkeit. <b>Für Sie heißt das:</b> Niemand springt beim Warten ab, und es gibt keinen Agentur-Vertrag und keine Update-Kosten dahinter.</p>
+    <strong>Ladezeit praktisch null.</strong>
+    <p>Die Seite besteht aus wenigen kleinen Dateien ohne Baukasten-System — im unabhängigen Google-Messverfahren 97–99 von 100 Punkten für Geschwindigkeit. Niemand springt beim Warten ab, und es hängt kein Agentur-Vertrag und keine Update-Kosten daran.</p>
   </div>
   <div class="punkt">
     <strong>Der Umzug auf Ihre echte Adresse ist fertig geplant.</strong>
-    <p>Ein Schaltplan-Dokument listet jede einzelne Stelle auf, die beim Livegang von der Vorschau-Adresse auf Ihre Domain umgestellt wird — inklusive Anmeldung bei Google. <b>Für Sie heißt das:</b> Der Livegang ist ein Abarbeiten von Häkchen, kein Neuanfang.</p>
-  </div>
-
-  <h2>4 · Was rechtlich sauber wurde</h2>
-  <div class="punkt">
-    <strong>Toter Pflicht-Link entfernt.</strong>
-    <p>Vorher: Das Impressum verwies auf die EU-Streitschlichtungsplattform — die wurde im Juli 2025 eingestellt, der Link führt ins Leere. Jetzt: Der veraltete Verweis ist raus, der weiterhin nötige Satz zur Schlichtungsbereitschaft bleibt. <b>Für Sie heißt das:</b> Ein Detail, das bei einer Abmahn-Durchsicht sofort auffallen würde, ist beseitigt.</p>
-  </div>
-  <div class="punkt">
-    <strong>Fehlende Pflichtangaben sind markiert statt erfunden.</strong>
-    <p>Rechtsform, Handwerkskammer und Handwerksrolle waren aus keiner öffentlichen Quelle belegbar. Die Stellen sind im Impressum deutlich als „vor Livegang klären" gekennzeichnet — nichts wurde dazugedichtet. <b>Für Sie heißt das:</b> Sie ergänzen drei Angaben, und das Impressum ist vollständig; eine erfundene Angabe wäre schlimmer als eine offene.</p>
-  </div>
-  <div class="punkt">
-    <strong>Kein Cookie-Fenster nötig — weil nichts an Dritte geht.</strong>
-    <p>Die alte Seite lud Dienste von Fremdanbietern und brauchte deshalb das Zustimmungsfenster. Die neue Seite lädt nichts von fremden Servern, das Fenster entfällt ersatzlos, und die Datenschutzerklärung passt exakt zu dieser einfachen Technik. <b>Für Sie heißt das:</b> Der erste Eindruck ist Ihr Geschäft statt eines Rechtstextes — und es gibt weniger Angriffsfläche.</p>
-  </div>
-  <div class="punkt">
-    <strong>Nichts Ungeprüftes auf der Seite.</strong>
-    <p>Preise, Fristen, Qualifikationen, Notdienst und Gründungsjahr stehen bewusst nicht auf der Seite — diese Angaben kommen von Ihnen und werden dann eingetragen. Zwei Leistungen aus Ihrem Großhandels-Profil (Wallbox, Netzwerktechnik) sind intern zur Bestätigung markiert. <b>Für Sie heißt das:</b> Kein Kunde kann Sie auf ein Versprechen festnageln, das Sie nie gegeben haben.</p>
-  </div>
-
-  <h2>5 · Was außerhalb der Website gefunden wurde</h2>
-  <p class="intro" style="margin-bottom:6px">Bei der Recherche zu Ihrem Betrieb sind Dinge aufgefallen, die keine Website der Welt allein reparieren kann — die aber mitentscheiden, ob Kunden Sie finden und Ihnen vertrauen.</p>
-
-  <div class="fund">
-    <strong>Ihr Betrieb tritt im Netz unter fünf verschiedenen Namen auf.</strong>
-    <p><b>Gefunden:</b> „Elektro Kirschner" (alte Website), „Elektro Rudolf Kirschner" (Großhandels-Profil), „Rudolf Kirschner Elektro" (Firmenauskunft), „Kirschner Rudolf Elektro" (Das Örtliche) und „Rudolf Kirschner ElektroArt." (weitere Verzeichnisse) — dazu der Vorlagen-Name „Home &amp; Tech" auf der alten Seite selbst.</p>
-    <p><b>Warum das schadet:</b> Google behandelt abweichende Schreibweisen schlimmstenfalls als verschiedene Firmen — Bewertungen, Einträge und Suchtreffer verteilen sich, statt auf ein Profil einzuzahlen. Und Kunden werden unsicher, ob sie beim Richtigen sind.</p>
-    <p><b>Was zu tun ist:</b> Eine Schreibweise festlegen (die neue Seite nutzt „Elektro Kirschner") und alle Verzeichnisse nach und nach auf genau diese Form korrigieren.</p>
-  </div>
-
-  <div class="fund">
-    <strong>Ihre Fax-Nummer kursiert als Telefonnummer.</strong>
-    <p><b>Gefunden:</b> In Verzeichniseinträgen ist die 09956 838 — die Faxnummer — als Rufnummer angegeben.</p>
-    <p><b>Warum das schadet:</b> Ein Kunde, der dort anruft, landet auf einem Faxgerät oder in der Leere — und ruft kein zweites Mal an. Jeder dieser Einträge kostet still Aufträge.</p>
-    <p><b>Was zu tun ist:</b> Die betroffenen Einträge auf die 09956 395 korrigieren (bei den meisten Verzeichnissen per kostenlosem „Eintrag übernehmen" möglich).</p>
-  </div>
-
-  <div class="fund">
-    <strong>Die Domain Ihrer eigenen E-Mail-Adresse zeigt eine Fehlerseite.</strong>
-    <p><b>Gefunden:</b> Ihre E-Mail lautet info@elektro-rudolf-kirschner.de — wer aber elektro-rudolf-kirschner.de im Browser aufruft, bekommt eine Fehlerseite.</p>
-    <p><b>Warum das schadet:</b> Genau das probieren Kunden aus, die Ihre E-Mail-Adresse auf einem Briefkopf oder einer Rechnung sehen. Eine Fehlerseite wirkt, als gäbe es den Betrieb nicht mehr.</p>
-    <p><b>Was zu tun ist:</b> Die Domain gehört offenbar bereits Ihnen — sie sollte entweder auf die neue Website umgeleitet oder gleich als deren Live-Adresse genutzt werden. Der fertige Umzugsplan liegt bei.</p>
-  </div>
-
-  <div class="fund">
-    <strong>Verzeichnis-Einträge ohne Fotos, teils mit falscher Branche.</strong>
-    <p><b>Gefunden:</b> Ihre Einträge in Branchenverzeichnissen stehen ohne Fotos da, teils mit unpassender Branchen-Einordnung und ohne Hinweis auf das Ladengeschäft.</p>
-    <p><b>Warum das schadet:</b> Verzeichnis-Einträge erscheinen oft VOR der eigenen Website in den Suchtreffern. Ein leerer Eintrag mit falscher Branche ist dann der erste Eindruck.</p>
-    <p><b>Was zu tun ist:</b> Die zwei, drei wichtigsten Einträge übernehmen und mit Fotos, Öffnungszeiten, Leistungen und einheitlichem Namen füllen — allen voran das Google-Unternehmensprofil, für dessen Verlinkung die neue Seite schon drei Stellen vorbereitet hat.</p>
-  </div>
-
-  <div class="fund">
-    <strong>Qualitätsnachweise vorhanden, aber unsichtbar.</strong>
-    <p><b>Gefunden:</b> Der Betrieb ist als E-Partner im Fachpartner-Netz des Elektrogroßhandels gelistet — auf der alten Website und in den Einträgen taucht davon nichts auf.</p>
-    <p><b>Warum das schadet:</b> Solche Nachweise sind genau die Art Beleg, die Unentschlossene umstimmt — ungenutzt sind sie wertlos.</p>
-    <p><b>Was zu tun ist:</b> Vorhandene Siegel, Partnerschaften und Urkunden zusammentragen (Foto genügt); die neue Seite bekommt dann eine entsprechende Leiste.</p>
-  </div>
-
-  <div class="fund">
-    <strong>Eine 1-Stern-Bewertung steht seit Langem unbeantwortet da.</strong>
-    <p><b>Gefunden:</b> Unter Ihren Google-Bewertungen ist eine einzelne 1-Stern-Wertung ohne Text — ohne jede Antwort des Betriebs.</p>
-    <p><b>Warum das schadet:</b> Nicht die schlechte Bewertung schreckt ab — das Schweigen dazu. Eine Antwort lesen alle künftigen Kunden, nicht der eine Bewerter.</p>
-    <p><b>Was zu tun ist:</b> Ein freundlicher Zweizeiler („Wir können die Bewertung keinem Vorgang zuordnen — rufen Sie uns gern an, wir klären das.") zeigt jedem Leser: Hier reagiert jemand.</p>
+    <p>Ein Schaltplan-Dokument listet jede einzelne Stelle auf, die beim Livegang von der Vorschau-Adresse auf Ihre Domain umgestellt wird — inklusive Anmeldung bei Google. Der Livegang ist ein Abarbeiten von Häkchen, kein Neuanfang.</p>
   </div>
 
   <div class="offen">
-    <h2>Was noch von Ihnen kommt</h2>
+    <h2>Teil 3 · Was noch von Ihnen kommt</h2>
     <ul>
-      <li><b>Vier Fotos</b> ersetzen die rot markierten Beispielbilder: Ihr Portrait im Laden, Arbeit am Zählerschrank, eine PV-Anlage von Ihnen, eine Geräte-Reparatur. Die genaue Anleitung steht in der Fotoliste.</li>
-      <li><b>Ein Foto der Ladenfront im Querformat</b> in hoher Auflösung — für die Link-Vorschau in WhatsApp &amp; Co.</li>
-      <li><b>Impressums-Angaben:</b> Rechtsform, Handwerkskammer, Handwerksrolle, ggf. Innung.</li>
-      <li><b>Bestätigung zweier Leistungen:</b> Wallbox/E-Mobilität und Netzwerktechnik stammen aus Ihrem Großhandels-Profil.</li>
+      <li><b>Fotos:</b> Vier Motive ersetzen die rot markierten Beispielbilder (Ihr Portrait im Laden, Arbeit am Zählerschrank, eine PV-Anlage von Ihnen, eine Geräte-Reparatur), dazu ein Foto der Ladenfront im Querformat für die Link-Vorschau. Die genaue Anleitung steht in der Fotoliste.</li>
+      <li><b>Bestätigung zweier Leistungen:</b> Wallbox/E-Mobilität und Netzwerktechnik stammen aus Ihrem Großhandels-Profil — bitte bestätigen, dass Sie beides anbieten.</li>
       <li><b>Ihr Zitat</b> unter „Über uns" — der jetzige Satz ist ein Vorschlag, gern in Ihren eigenen Worten.</li>
-      <li><b>Auf Wunsch:</b> übliche Preisspanne, Zahlarten im Laden, Gründungsjahr — dann ergänzen wir sie an den vorbereiteten Stellen.</li>
-      <li><b>Google-Unternehmensprofil</b> anlegen bzw. übernehmen — den Link trägt die Seite dann an drei vorbereiteten Stellen.</li>
+      <li><b>Impressums-Pflichtangaben:</b> Rechtsform, Handwerkskammer, Handwerksrolle, ggf. Innung. Diese Angaben fehlen auch im bisherigen Impressum und waren aus keiner öffentlichen Quelle belegbar — die Stellen sind auf der neuen Seite deutlich als „vor Livegang klären" markiert, nichts wurde dazugedichtet.</li>
     </ul>
+    <p>Preise, Fristen, Qualifikationen, Notdienst und Gründungsjahr stehen bewusst noch nicht auf der Seite — sie kommen aus dem Gespräch mit Ihnen und werden dann an den vorbereiteten Stellen ergänzt.</p>
   </div>
 
 </main>
