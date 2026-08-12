@@ -1,0 +1,6 @@
+# Vorschau-Version: nicht indexieren.
+# LIVEGANG: Disallow entfernen und Sitemap-Zeile auf die echte Domain umstellen.
+User-agent: *
+Disallow: /
+
+Sitemap: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/sitemap.xml
