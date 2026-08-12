@@ -1,0 +1,53 @@
+# Elektro Kirschner — Eichendorf-Aufhausen
+
+> Elektrohandwerk mit eigenem Fachgeschäft in Aufhausen (Markt Eichendorf, Landkreis Dingolfing-Landau, Niederbayern). Elektroinstallation, Photovoltaik und Siemens/Miele-Hausgeräte — verkauft, angeschlossen und repariert. Keine Warteschleife: Anrufer sprechen direkt mit dem Betrieb.
+
+<!-- LIVEGANG: alle URLs in dieser Datei auf die echte Domain umstellen -->
+
+## Steckbrief
+
+- Betrieb: Elektro Kirschner — Elektrohandwerk mit eigenem Fachgeschäft
+- Inhaber: Rudolf Kirschner jun.
+- Adresse: Eichendorfer Str. 15, 94428 Eichendorf-Aufhausen
+- Besonderheit: Eigenes Ladengeschäft — Beratung, Verkauf und Reparaturannahme vor Ort
+
+## Kontakt und Öffnungszeiten
+
+- Telefon: 09956 395 (+49 9956 395)
+- E-Mail: info@elektro-rudolf-kirschner.de
+- Öffnungszeiten: Montag–Freitag 7:30–18:00 Uhr, Samstag 7:30–11:30 Uhr
+- Kontaktseite: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#kontakt
+
+## Leistungen
+
+- Elektroinstallation (Neubau, Sanierung, Reparatur): https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#leistungen
+- Photovoltaik (Beratung und fachgerechte Elektroinstallation der Anlage)
+- Hausgeräte: Verkauf, Anschluss und Reparatur (Fachgeschäft für Siemens und Miele): https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#hausgeraete-reparatur
+- TV/SAT- und Antennentechnik
+- Wallbox / E-Mobilität: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#wallbox
+- Netzwerktechnik: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#netzwerk
+- Ersatzteile und Zubehör (über 100.000 Artikel über Großhandelszugang bestellbar, vieles innerhalb von 24 Stunden): https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#ersatzteile
+
+## Einzugsgebiet
+
+Eichendorf mit Ortsteilen, Simbach bei Landau, Landau a. d. Isar, Pilsting, Arnstorf — Landkreis Dingolfing-Landau, Niederbayern.
+https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#einzugsgebiet
+
+## Marken
+
+Siemens, Miele, Grundig, Panasonic, TechniSat, Kathrein
+
+## Häufige Fragen
+
+- Lohnt sich eine Reparatur der Waschmaschine noch? Ehrliche Einschätzung, ob Reparatur oder Neugerät wirtschaftlich sinnvoller ist: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#faq-reparatur
+- Wie schnell bekomme ich einen Termin? Anruf unter 09956 395 oder direkt im Geschäft vorbeikommen: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#faq-termin
+- Kommen Sie auch nach Hause? Ja, in Eichendorf, Aufhausen und der gesamten Umgebung: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#faq-vor-ort
+- Führen Sie Ersatzteile und Zubehör? Ja, bestellbar über den Großhandelszugang: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#faq-ersatzteile
+- Was kostet eine Elektroinstallation oder Reparatur? Klare Kostenaussage vorab nach Ansicht des Vorhabens: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#faq-kosten
+- Beraten Sie zu Photovoltaik? Ja, inklusive Prüfung der Möglichkeiten am Haus: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/#faq-photovoltaik
+
+## Rechtliches
+
+- Impressum: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/impressum.html
+- Datenschutz: https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/datenschutz.html
+- Umsatzsteuer-ID: DE270019865

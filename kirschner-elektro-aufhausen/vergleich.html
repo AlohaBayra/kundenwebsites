@@ -12,16 +12,20 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"SF Pro Display","Helvetica Neue",Inter,sans-serif;color:var(--text);line-height:1.5;font-size:19px;-webkit-font-smoothing:antialiased;background:#f5f5f7}
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
-header{padding:48px 0 34px;text-align:center}
+header{padding:48px 0 10px;text-align:center}
 h1{font-size:clamp(32px,3.6vw,48px);letter-spacing:-.03em;line-height:1.05;margin-bottom:10px}
 header p{color:var(--sekundaer);max-width:640px;margin:0 auto}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding-bottom:80px;align-items:start}
-.spalte h2{font-size:20px;letter-spacing:.06em;text-transform:uppercase;color:var(--grau);margin-bottom:14px;text-align:center}
-.spalte.neu h2{color:var(--akzent)}
+h2.abschnitt{font-size:clamp(24px,2.6vw,32px);letter-spacing:-.025em;line-height:1.15;text-align:center;margin:54px 0 6px}
+p.abschnitt-sub{color:var(--sekundaer);text-align:center;max-width:620px;margin:0 auto 28px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.handy .grid{max-width:900px;margin:0 auto}
+.spalte h3{font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--grau);margin-bottom:14px;text-align:center}
+.spalte.neu h3{color:var(--akzent)}
 .rahmen{background:#fff;border:1px solid var(--linie);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06)}
 .rahmen img{width:100%;height:auto;display:block}
 .spalte p.hinweis{color:var(--grau);font-size:14.5px;margin-top:12px;text-align:center}
 @media(max-width:860px){.grid{grid-template-columns:1fr}}
+main{padding-bottom:80px}
 footer{padding:0 0 48px;text-align:center;color:var(--grau);font-size:15px}
 footer a{color:var(--akzent)}
 </style>
@@ -29,26 +33,55 @@ footer a{color:var(--akzent)}
 <body>
 <header class="wrap">
   <h1>Vorher / Nachher</h1>
-  <p>Links die bisherige Website (Agentur-Baukasten), rechts der neue Auftritt — beide als vollständige Bildschirmaufnahme der Startseite.</p>
+  <p>Die bisherige Website (Agentur-Baukasten) neben dem neuen Auftritt — jeweils als echte, unbearbeitete Bildschirmaufnahme.</p>
 </header>
-<main class="wrap grid">
-  <div class="spalte">
-    <h2>Vorher</h2>
-    <div class="rahmen">
-      <img src="assets/vergleich/vorher.jpg" width="1100" height="2807" alt="Bildschirmaufnahme der bisherigen Website von Elektro Kirschner: Baukasten-Vorlage mit Cookie-Banner, austauschbaren Symbolbildern und Platzhalter-Karte">
+<main class="wrap">
+
+  <section class="handy">
+    <h2 class="abschnitt">So sieht Ihre Seite auf dem Handy aus – wo die meisten Kunden suchen</h2>
+    <p class="abschnitt-sub">Beides ist der allererste Bildschirm, den ein Kunde auf dem Handy sieht — ohne zu scrollen, ohne zu tippen.</p>
+    <div class="grid">
+      <div class="spalte">
+        <h3>Vorher</h3>
+        <div class="rahmen">
+          <img src="assets/vergleich/vorher-handy.jpg" width="390" height="844" alt="Erster Handy-Bildschirm der bisherigen Website: ein Cookie-Zustimmungsfenster verdeckt die gesamte Seite, vom Betrieb ist nichts zu sehen">
+        </div>
+        <p class="hinweis">Das Erste, was ein Kunde sieht: ein Zustimmungsfenster über der ganzen Seite. Kein Name, keine Nummer, keine Leistung — und der fremde Markenname „Home &amp; Tech" statt Elektro Kirschner.</p>
+      </div>
+      <div class="spalte neu">
+        <h3>Nachher</h3>
+        <div class="rahmen">
+          <img src="assets/vergleich/nachher-handy.jpg" width="390" height="844" alt="Erster Handy-Bildschirm der neuen Website: Überschrift „Elektriker mit eigenem Fachgeschäft in Aufhausen", Anruf-Knopf, Nachricht-Knopf und feste Anruf-Leiste unten">
+        </div>
+        <p class="hinweis">Das Erste, was ein Kunde jetzt sieht: wer Sie sind, was Sie tun — und zwei Knöpfe zum Anrufen. Kein Zustimmungsfenster nötig, weil die Seite nichts an Dritte weitergibt.</p>
+      </div>
     </div>
-    <p class="hinweis">Aufnahme vom August 2026 — mit Cookie-Banner, austauschbaren Vorlagen-Bildern und Platzhalter-Karte.</p>
-  </div>
-  <div class="spalte neu">
-    <h2>Nachher</h2>
-    <div class="rahmen">
-      <img src="assets/vergleich/nachher.jpg" width="1100" height="6715" alt="Bildschirmaufnahme der neuen Website: echtes Ladengeschäft, Inhaber im Mittelpunkt, Google-Bewertungen und klare Leistungen — rote Markierungen kennzeichnen Beispielbilder, die noch durch echte Fotos ersetzt werden">
+  </section>
+
+  <section>
+    <h2 class="abschnitt">Die ganze Seite am Computer</h2>
+    <p class="abschnitt-sub">Beide Startseiten in voller Länge, aufgenommen bei 1440 Pixel Breite.</p>
+    <div class="grid">
+      <div class="spalte">
+        <h3>Vorher</h3>
+        <div class="rahmen">
+          <img src="assets/vergleich/vorher.jpg" width="1452" height="3705" alt="Vollständige Bildschirmaufnahme der bisherigen Website von Elektro Kirschner: Baukasten-Vorlage unter dem fremden Namen Home &amp; Tech mit austauschbaren Symbolbildern">
+        </div>
+        <p class="hinweis">Aufnahme vom August 2026 — Vorlagen-Design unter fremdem Namen, austauschbare Symbolbilder, keine Bewertungen; Öffnungszeiten nur ganz unten im Fußbereich, per Skript eingeblendet.</p>
+      </div>
+      <div class="spalte neu">
+        <h3>Nachher</h3>
+        <div class="rahmen">
+          <img src="assets/vergleich/nachher.jpg" width="1440" height="9720" alt="Vollständige Bildschirmaufnahme der neuen Website: echtes Ladengeschäft, Google-Bewertungen, klare Leistungen und Kontaktwege — rote Markierungen kennzeichnen Beispielbilder, die noch durch echte Fotos ersetzt werden">
+        </div>
+        <p class="hinweis">Die rot markierten Bilder sind Beispiel-Motive — sie werden durch echte Fotos aus dem Betrieb ersetzt (siehe Fotoliste).</p>
+      </div>
     </div>
-    <p class="hinweis">Die rot markierten Bilder sind Beispiel-Motive — sie werden durch echte Fotos aus dem Betrieb ersetzt (siehe Fotoliste).</p>
-  </div>
+  </section>
+
 </main>
 <footer class="wrap">
-  <a href="index.html">← Zur neuen Startseite</a>
+  <a href="./">← Zur neuen Startseite</a> &nbsp;·&nbsp; <a href="vorteile.html">Alle Verbesserungen im Überblick</a>
 </footer>
 </body>
 </html>

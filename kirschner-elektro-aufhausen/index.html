@@ -6,23 +6,34 @@
 <meta name="robots" content="noindex, nofollow">
 <!-- LIVEGANG: diese Zeile in allen HTML-Dateien entfernen -->
 <title>Elektro Kirschner Aufhausen · Elektriker in Eichendorf</title>
-<meta name="description" content="Elektro Kirschner in Eichendorf-Aufhausen: Elektroinstallation, Photovoltaik, Siemens- und Miele-Hausgeräte mit Reparaturservice. Fachgeschäft Mo–Sa geöffnet. ☎ 09956 395">
+<meta name="description" content="Elektro Kirschner in Eichendorf-Aufhausen: Elektroinstallation, Photovoltaik, Siemens- und Miele-Hausgeräte mit Reparaturservice. Fachgeschäft Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr. ☎ 09956 395">
+<!-- LIVEGANG: alle folgenden absoluten URLs auf die echte Domain umstellen.
+     Vollständige Liste in LIVEGANG.md -->
 <link rel="canonical" href="https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Elektro Kirschner Aufhausen · Elektriker in Eichendorf">
-<meta property="og:description" content="Elektroinstallation, Photovoltaik, Siemens- &amp; Miele-Hausgeräte mit Reparaturservice — mit eigenem Fachgeschäft in Eichendorf-Aufhausen, Mo–Sa geöffnet.">
+<meta property="og:description" content="Elektroinstallation, Photovoltaik, Siemens- &amp; Miele-Hausgeräte mit Reparaturservice — mit eigenem Fachgeschäft in Eichendorf-Aufhausen, Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr.">
 <meta property="og:image" content="https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/assets/laden-front.jpg">
+<!-- TODO: og:image ist mit 976×608 kleiner als das empfohlene Vorschauformat 1200×630 — beim Fototermin ein hochauflösendes Querformat-Foto der Ladenfront machen und ersetzen -->
+<meta property="og:image:alt" content="Ladenfront von Elektro Kirschner in Aufhausen mit Siemens- und Miele-Beschilderung">
+<meta property="og:image:width" content="976">
+<meta property="og:image:height" content="608">
 <meta property="og:url" content="https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/">
+<meta property="og:site_name" content="Elektro Kirschner">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Elektro Kirschner Aufhausen · Elektriker in Eichendorf">
 <meta name="twitter:description" content="Elektroinstallation, Photovoltaik, Siemens- &amp; Miele-Hausgeräte mit Reparaturservice — Fachgeschäft in Eichendorf-Aufhausen.">
 <meta name="twitter:image" content="https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/assets/laden-front.jpg">
+<!-- TODO (JSON-LD, Angaben fehlen bewusst — kommen vom Betrieb bzw. nach Anlage des Google-Profils):
+     geo (Koordinaten), hasMap (Google-Maps-Link des Unternehmensprofils),
+     priceRange, paymentAccepted (Zahlarten im Laden), foundingDate (Gründungsjahr) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Electrician",
+  "@type": ["Electrician", "Store"],
+  "@id": "https://PLATZHALTER-LIVEDOMAIN/#betrieb",
   "name": "Elektro Kirschner",
   "founder": { "@type": "Person", "name": "Rudolf Kirschner jun." },
   "image": "https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/assets/laden-front.jpg",
@@ -30,13 +41,25 @@
   "url": "https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/",
   "telephone": "+499956395",
   "email": "info@elektro-rudolf-kirschner.de",
+  "vatID": "DE270019865",
+  "currenciesAccepted": "EUR",
+  "dateModified": "2026-08-12",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Eichendorfer Str. 15",
     "addressLocality": "Eichendorf-Aufhausen",
+    "addressRegion": "Bayern",
     "postalCode": "94428",
     "addressCountry": "DE"
   },
+  "brand": [
+    { "@type": "Brand", "name": "Siemens" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Grundig" },
+    { "@type": "Brand", "name": "Panasonic" },
+    { "@type": "Brand", "name": "TechniSat" },
+    { "@type": "Brand", "name": "Kathrein" }
+  ],
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "11:30" }
@@ -60,6 +83,7 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "about": { "@id": "https://PLATZHALTER-LIVEDOMAIN/#betrieb" },
   "mainEntity": [
     {
       "@type": "Question",
@@ -114,6 +138,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--akzent);outline-off
 .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 section{padding:88px 0}
+section[id],article[id],h3[id],details[id]{scroll-margin-top:80px}
 h2{font-size:clamp(28px,3vw,40px);letter-spacing:-.025em;line-height:1.1;font-weight:700;margin-bottom:14px}
 .kicker{display:block;color:var(--akzent);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
 .sub{color:var(--sekundaer);max-width:640px}
@@ -145,7 +170,7 @@ body.echte-fotos .fake-banner, body.echte-fotos .foto-anleitung{display:none}
 .nav-links{display:flex;gap:22px;margin-left:auto}
 .nav-links a{color:var(--sekundaer);font-size:15.5px;font-weight:500}
 .nav-links a:hover{color:var(--text)}
-.nav-tel{font-weight:700;color:var(--text);font-size:15.5px;white-space:nowrap}
+.nav-tel{white-space:nowrap}
 .btn{
   display:inline-block;border-radius:980px;padding:14px 28px;font-weight:600;font-size:17px;
   transition:transform .4s cubic-bezier(.16,1,.3,1),background .4s cubic-bezier(.16,1,.3,1);
@@ -156,17 +181,19 @@ body.echte-fotos .fake-banner, body.echte-fotos .foto-anleitung{display:none}
 .btn-leer{border:1.5px solid #d5d5d8;color:var(--text)}
 .btn-leer:hover{border-color:var(--grau)}
 .nav .btn{padding:9px 20px;font-size:15px}
-@media(max-width:900px){.nav-links{display:none}.nav-tel{margin-left:auto}}
-@media(max-width:600px){.nav-tel{display:none}.nav .btn{margin-left:auto}}
+@media(max-width:900px){.nav-links{display:none}.nav .nav-tel{margin-left:auto}}
 
 /* ---------- Hero ---------- */
 .hero{padding:64px 0 88px}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
 h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font-weight:700;margin-bottom:20px}
 .hero .sub{font-size:21px;margin-bottom:30px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+.cta-hinweis{color:var(--grau);font-size:15px;margin-bottom:20px}
 .hero-vertrauen{display:flex;align-items:center;gap:10px;color:var(--sekundaer);font-size:16px;flex-wrap:wrap}
+.offen-status{color:var(--sekundaer);font-size:15.5px;margin-top:8px;min-height:1em}
 .sterne{color:#f5a623;letter-spacing:2px;font-size:17px}
+.halb{display:inline-block;width:.55em;overflow:hidden;vertical-align:bottom}
 .hero-figure{position:relative}
 .hero-name{
   display:flex;align-items:baseline;gap:10px;margin-bottom:12px;
@@ -189,20 +216,36 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
 .hero-review p{margin:7px 0 9px;color:var(--text)}
 .hero-review footer{color:var(--grau);font-size:13.5px}
 @media(max-width:900px){
-  .hero{padding:44px 0 72px}
+  .hero{padding:22px 0 72px}
   .hero-grid{grid-template-columns:1fr;gap:40px}
-  .hero-figure{order:-1}
+  .hero-bild img{aspect-ratio:4/3;max-height:46vh}
+  .hero .kicker{font-size:12px;letter-spacing:.05em;margin-bottom:8px;white-space:nowrap}
 }
 
-/* ---------- Schnelleinstieg (Zielgruppen-Anker) ---------- */
-.einstieg{padding:0 0 8px}
-.einstieg-reihe{display:flex;gap:12px;flex-wrap:wrap}
+/* ---------- Schnelleinstieg (Zielgruppen-Anker, im Hero) ---------- */
+.einstieg-reihe{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
 .einstieg a{
   border:1.5px solid var(--linie);border-radius:980px;padding:11px 20px;
   color:var(--text);font-size:16px;font-weight:500;background:#fff;
   transition:border-color .4s cubic-bezier(.16,1,.3,1);
 }
 .einstieg a:hover{border-color:var(--akzent)}
+
+/* ---------- Auf einen Blick ---------- */
+.blick{padding:0 0 64px}
+.blick-box{background:var(--flaeche);border-radius:18px;padding:28px 30px}
+.blick-box h2{font-size:20px;letter-spacing:-.01em;margin-bottom:16px}
+.blick dl{display:grid;grid-template-columns:auto 1fr;gap:9px 26px;font-size:16px}
+.blick dt{color:var(--grau);white-space:nowrap}
+@media(max-width:600px){
+  .blick dl{grid-template-columns:1fr;gap:2px}
+  .blick dd{margin-bottom:9px}
+}
+
+/* ---------- CTA-Zeilen ---------- */
+.cta-zeile{margin-top:10px;padding:16px 22px;background:var(--flaeche);border-radius:14px;font-size:17px}
+.cta-zeile a{font-weight:700;white-space:nowrap}
+.bewertungen .cta-zeile{background:#fff;border:1px solid var(--linie)}
 
 /* ---------- Vertrauensleiste ---------- */
 .leiste{background:var(--flaeche);padding:44px 0}
@@ -249,6 +292,16 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
 .galerie figcaption{padding:12px 4px 0;color:var(--grau);font-size:15px}
 @media(max-width:700px){.galerie{grid-template-columns:1fr}}
 
+/* ---------- Wo wir arbeiten ---------- */
+.orte{padding:0 0 88px}
+.orte-liste{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.orte-liste li{border:1.5px solid var(--linie);border-radius:980px;padding:9px 18px;font-size:16px}
+
+/* ---------- Galerie-Aktionszeile ---------- */
+.galerie-aktion{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.galerie-aktion p{color:var(--sekundaer);font-size:17px}
+.galerie-aktion .knoepfe{display:flex;gap:12px;flex-wrap:wrap}
+
 /* ---------- Ablauf ---------- */
 .ablauf{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:36px}
 .ablauf article{position:relative;padding-top:14px}
@@ -279,12 +332,15 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
   transition:border-color .4s cubic-bezier(.16,1,.3,1);
 }
 .pfeile button:hover{border-color:var(--akzent)}
+.punkte{display:flex;gap:8px;justify-content:center;margin-top:22px}
+.punkte span{width:8px;height:8px;border-radius:50%;background:#d0d0d4;transition:background .4s cubic-bezier(.16,1,.3,1)}
+.punkte span.aktiv{background:var(--akzent)}
 @media(max-width:1000px){.karte{flex:0 0 calc((100% - 24px)/2)}}
 @media(max-width:640px){.karte{flex:0 0 100%}}
 @media (prefers-reduced-motion: reduce){
   .spur{flex-wrap:wrap}
   .karte{flex:1 1 300px}
-  .pfeile{display:none}
+  .pfeile,.punkte{display:none}
 }
 .google-hinweis{margin-top:22px;color:var(--grau);font-size:15px}
 
@@ -294,7 +350,7 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
   display:flex;gap:16px 44px;flex-wrap:wrap;justify-content:center;align-items:center;
   color:var(--grau);font-size:19px;font-weight:600;letter-spacing:.02em;
 }
-.marken p{text-align:center;color:var(--grau);font-size:15px;margin-bottom:22px}
+.marken h2{text-align:center;color:var(--grau);font-size:17px;font-weight:600;letter-spacing:.02em;margin-bottom:22px}
 
 /* ---------- FAQ ---------- */
 .faq details{border-bottom:1px solid var(--linie);padding:4px 0}
@@ -317,6 +373,9 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
 .kontakt-info dt{color:var(--grau)}
 .kontakt-info dd strong{font-size:19px}
 .kontakt-info a{font-weight:600}
+.kontakt-knoepfe{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.kontakt-knoepfe .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:600px){.kontakt-knoepfe{flex-direction:column}.kontakt-knoepfe .btn{width:100%}}
 .formular{background:#fff;border:1px solid var(--linie);border-radius:18px;padding:30px}
 .formular label{display:block;font-size:15px;font-weight:600;margin:16px 0 6px}
 .formular label:first-of-type{margin-top:0}
@@ -325,8 +384,10 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
   font:inherit;font-size:17px;color:var(--text);background:#fff;
 }
 .formular input:focus,.formular textarea:focus{outline:none;border-color:var(--akzent)}
-.formular button{border:none;cursor:pointer;width:100%;margin-top:20px;font:inherit}
-.formular .hinweis{color:var(--grau);font-size:13.5px;margin-top:12px}
+.formular button{border:none;cursor:pointer;font:inherit}
+.formular .hinweis{color:var(--grau);font-size:14.5px;margin-top:18px}
+.formular-knoepfe{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.formular-knoepfe .btn{flex:1 1 200px;min-height:48px;display:inline-flex;align-items:center;justify-content:center}
 @media(max-width:900px){.kontakt-grid{grid-template-columns:1fr}}
 
 /* ---------- Footer ---------- */
@@ -345,6 +406,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
     border-top:1px solid var(--linie);padding:10px 14px calc(10px + env(safe-area-inset-bottom));
   }
   .anruf-leiste a{flex:1;padding:13px 10px;font-size:16px}
+  .anruf-leiste a:first-child{flex:1.9}
 }
 </style>
 </head>
@@ -363,27 +425,35 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
       <a href="#bewertungen">Bewertungen</a>
       <a href="#faq">Fragen</a>
     </nav>
-    <a class="nav-tel" href="tel:+499956395">09956&nbsp;395</a>
-    <a class="btn btn-voll" href="#kontakt">Kontakt</a>
+    <a class="btn btn-voll nav-tel" href="tel:+499956395">☎ 09956&nbsp;395</a>
   </div>
 </header>
 
 <main>
 
-<section class="hero" aria-label="Einführung">
+<section class="hero" aria-labelledby="hero-h">
   <div class="wrap hero-grid">
     <div>
       <span class="kicker">Elektro Kirschner · Eichendorf-Aufhausen</span>
-      <h1>Elektriker mit eigenem Fachgeschäft in Aufhausen.</h1>
-      <p class="sub">Elektroinstallation, Photovoltaik und Hausgeräte von Siemens &amp; Miele — verkauft, angeschlossen und repariert von einem inhabergeführten Betrieb. Bei uns stehen Sie nicht in der Warteschleife: Anrufen oder einfach im Laden vorbeikommen.</p>
+      <h1 id="hero-h">Elektriker mit eigenem Fachgeschäft in Aufhausen.</h1>
+      <p class="sub">Elektroinstallation, Photovoltaik und Siemens/Miele-Geräte — verkauft, angeschlossen und repariert.</p>
       <div class="hero-ctas">
         <a class="btn btn-voll" href="tel:+499956395">☎ 09956 395 anrufen</a>
         <a class="btn btn-leer" href="#kontakt">Nachricht schreiben</a>
       </div>
+      <p class="cta-hinweis">Keine Warteschleife – Sie sprechen sofort mit jemandem.</p>
+      <div class="einstieg-reihe" aria-label="Schnelleinstieg">
+        <a href="#reparatur">Gerät defekt? → Reparatur &amp; Ersatz</a>
+        <a href="#elektroinstallation">Bauen oder sanieren? → Elektroinstallation</a>
+        <a href="#photovoltaik">Eigener Strom? → Photovoltaik</a>
+        <a href="#fachgeschaeft">Lieber persönlich? → Laden in Aufhausen</a>
+      </div>
+      <!-- TODO: Link zum Google-Unternehmensprofil ergänzen, sobald die Profil-Adresse vorliegt -->
       <p class="hero-vertrauen">
-        <span class="sterne" aria-hidden="true">★★★★★</span>
-        <strong>4,7 von 5</strong> bei Google (15&nbsp;Bewertungen) · Mo–Sa geöffnet
+        <span class="sterne" aria-hidden="true">★★★★<span class="halb">★</span></span>
+        <strong>4,7 von 5</strong> bei Google (15&nbsp;Bewertungen) · Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr
       </p>
+      <p class="offen-status" id="offen-status"></p>
     </div>
     <div class="hero-figure">
       <p class="hero-name"><strong>Rudolf Kirschner jun.</strong> <span>Inhaber</span></p>
@@ -396,7 +466,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         <span class="hero-badge">Inhabergeführt · Fachgeschäft in Aufhausen</span>
       </div>
       <aside class="hero-review" aria-label="Kundenbewertung">
-        <span class="sterne" aria-hidden="true">★★★★★</span>
+        <!-- Einzel-Sternwert dieser Bewertung nicht verifiziert — deshalb keine Sternreihe, nur das wortgetreue Zitat -->
         <p>„Ganz toller Kundenservice. Von der ersten Kontaktaufnahme bis zur Fertigstellung – einfach perfekt."</p>
         <footer>Timm Erny · Google-Bewertung</footer>
       </aside>
@@ -405,21 +475,31 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
   </div>
 </section>
 
-<section class="einstieg" aria-label="Schnelleinstieg">
+<section class="blick" aria-labelledby="blick-h">
   <div class="wrap">
-    <div class="einstieg-reihe">
-      <a href="#reparatur">Gerät defekt? → Reparatur &amp; Ersatz</a>
-      <a href="#elektroinstallation">Bauen oder sanieren? → Elektroinstallation</a>
-      <a href="#photovoltaik">Eigener Strom? → Photovoltaik</a>
-      <a href="#fachgeschaeft">Lieber persönlich? → Laden in Aufhausen</a>
+    <div class="blick-box">
+      <h2 id="blick-h">Elektro Kirschner auf einen Blick</h2>
+      <dl>
+        <dt>Betrieb</dt><dd>Elektro Kirschner — Elektrohandwerk mit eigenem Fachgeschäft</dd>
+        <dt>Inhaber</dt><dd>Rudolf Kirschner jun.</dd>
+        <dt>Adresse</dt><dd>Eichendorfer Str. 15, 94428 Eichendorf-Aufhausen</dd>
+        <dt>Telefon</dt><dd><a href="tel:+499956395">09956 395</a></dd>
+        <dt>E-Mail</dt><dd><a href="mailto:info@elektro-rudolf-kirschner.de">info@elektro-rudolf-kirschner.de</a></dd>
+        <dt>Öffnungszeiten</dt><dd>Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr</dd>
+        <dt>Leistungen</dt><dd>Elektroinstallation, Photovoltaik, Hausgeräte-Verkauf und -Reparatur, TV/SAT- und Antennentechnik, Wallbox, Netzwerktechnik, Ersatzteile</dd>
+        <dt>Marken</dt><dd>Siemens, Miele, Grundig, Panasonic, TechniSat, Kathrein</dd>
+        <dt>Einzugsgebiet</dt><dd>Eichendorf mit Ortsteilen, Simbach bei Landau, Landau a. d. Isar, Pilsting, Arnstorf</dd>
+        <dt>Besonderheit</dt><dd>Eigenes Ladengeschäft — Beratung, Verkauf und Reparaturannahme vor Ort</dd>
+      </dl>
     </div>
   </div>
 </section>
 
-<section class="leiste" aria-label="Vertrauen">
-  <h2 class="sr-only">Warum Elektro Kirschner</h2>
+<section class="leiste" aria-labelledby="leiste-h">
+  <h2 class="sr-only" id="leiste-h">Warum Elektro Kirschner</h2>
   <div class="wrap leiste-grid">
     <div>
+      <!-- TODO: Link zum Google-Unternehmensprofil ergänzen, sobald die Profil-Adresse vorliegt -->
       <h3>★ 4,7 bei Google</h3>
       <p>15 Bewertungen — von Kunden aus der Region.</p>
     </div>
@@ -438,10 +518,9 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
   </div>
 </section>
 
-<section id="leistungen" aria-label="Leistungen">
+<section id="leistungen" aria-labelledby="leistungen-h">
   <div class="wrap">
-    <span class="kicker">Leistungen</span>
-    <h2>Alles Elektrische — aus einer Hand.</h2>
+    <h2 id="leistungen-h">Alles Elektrische aus einer Hand – Leistungen in Eichendorf und Aufhausen</h2>
     <p class="sub">Vom Sicherungskasten bis zur Waschmaschine: Sie rufen einmal an, wir kümmern uns.</p>
 
     <article class="leistung" id="elektroinstallation">
@@ -457,7 +536,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
       </div>
       <div>
         <h3>Elektroinstallation</h3>
-        <p>Neubau, Sanierung oder eine zusätzliche Steckdose: Wir planen und installieren die komplette Elektrik in Haus und Betrieb — sicher, sauber und nach Vorschrift. <strong>Für Sie heißt das:</strong> eine Elektrik, auf die Sie sich verlassen können, von jemandem aus dem Ort, der auch morgen noch erreichbar ist.</p>
+        <p>Neubau, Sanierung oder eine zusätzliche Steckdose: Wir planen und installieren die komplette Elektrik in Haus und Betrieb — sicher, sauber und nach Vorschrift. Eine Elektrik, auf die Sie sich verlassen können, von jemandem aus dem Ort, der auch morgen noch erreichbar ist.</p>
         <ul>
           <li>Neubau- und Altbau-Installation</li>
           <li>Zählerschrank- und Verteilermodernisierung</li>
@@ -466,6 +545,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         </ul>
       </div>
     </article>
+    <p class="cta-zeile">Projekt geplant? <a href="tel:+499956395">☎ 09956 395</a> – wir schauen es uns unverbindlich an.</p>
 
     <article class="leistung gespiegelt" id="photovoltaik">
       <div class="bild-spalte">
@@ -488,6 +568,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         </ul>
       </div>
     </article>
+    <p class="cta-zeile">Lohnt sich Photovoltaik bei Ihrem Haus? <a href="tel:+499956395">☎ 09956 395</a> – ehrliche Einschätzung statt Verkaufsdruck.</p>
 
     <article class="leistung" id="reparatur">
       <div class="bild-spalte">
@@ -501,7 +582,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         <p class="foto-anleitung">📷 So soll dieses Bild aussehen: Reparatur eines Hausgeräts in der eigenen Werkstatt oder beim Kunden · Hoch- oder Querformat · Hände mit Werkzeug am geöffneten Gerät, konzentrierter Blick · helles Arbeitslicht · Marken-Gerät (Siemens/Miele) erkennbar.</p>
       </div>
       <div>
-        <h3>Hausgeräte: Verkauf, Anschluss &amp; Reparatur</h3>
+        <h3 id="hausgeraete-reparatur">Hausgeräte: Verkauf, Anschluss &amp; Reparatur</h3>
         <p>Waschmaschine, Trockner, Geschirrspüler, Herd oder Kühlschrank — bei uns bekommen Sie Markengeräte von Siemens und Miele mit allem drumherum: Beratung im Laden, Lieferung, Anschluss, Altgeräte-Mitnahme und Reparatur, wenn mal etwas streikt. <strong>Für Sie heißt das:</strong> kein anonymer Versandhandel — sondern jemand, der auch nach dem Kauf noch da ist. Und wir sagen Ihnen ehrlich, ob sich eine Reparatur noch lohnt.</p>
         <ul>
           <li>Siemens- und Miele-Geräte im Fachgeschäft</li>
@@ -511,37 +592,38 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         </ul>
       </div>
     </article>
+    <p class="cta-zeile">Gerät streikt? <a href="tel:+499956395">☎ 09956 395</a> – oder im Laden vorbeikommen.</p>
 
     <div class="weitere">
       <article id="tv-sat">
         <h3>TV, SAT &amp; Antennentechnik</h3>
-        <p>Fernseher von Grundig und Panasonic, SAT-Anlagen von TechniSat und Kathrein — beraten im Laden, montiert bei Ihnen zu Hause, eingestellt bis das Bild steht. <strong>Für Sie heißt das:</strong> fernsehen ohne Frust, ohne Hotline.</p>
+        <p>Fernseher von Grundig und Panasonic, SAT-Anlagen von TechniSat und Kathrein — beraten im Laden, montiert bei Ihnen zu Hause, eingestellt bis das Bild steht. Fernsehen ohne Frust und ohne Hotline.</p>
       </article>
-      <article>
+      <article id="wallbox">
         <h3>Wallbox &amp; E-Mobilität</h3>
         <!-- PRÜFEN: Leistung stammt aus dem Sonepar-e-partner-Profil des Betriebs, nicht von der alten Website — vor Livegang mit dem Kunden bestätigen -->
-        <p>Ihr E-Auto lädt am besten in der eigenen Garage. Wir installieren die passende Wallbox samt Absicherung. <strong>Für Sie heißt das:</strong> günstig über Nacht laden statt an der Säule warten.</p>
+        <p>Ihr E-Auto lädt am besten in der eigenen Garage. Wir installieren die passende Wallbox samt Absicherung — so laden Sie günstig über Nacht, statt an der Säule zu warten.</p>
       </article>
-      <article>
+      <article id="netzwerk">
         <h3>Netzwerk &amp; Datentechnik</h3>
         <!-- PRÜFEN: Leistung stammt aus dem Sonepar-e-partner-Profil des Betriebs, nicht von der alten Website — vor Livegang mit dem Kunden bestätigen -->
-        <p>Stabiles WLAN und Netzwerkdosen in jedem Zimmer — sauber verkabelt statt Funklöcher. <strong>Für Sie heißt das:</strong> Homeoffice und Streaming ohne Aussetzer.</p>
+        <p>Stabiles WLAN und Netzwerkdosen in jedem Zimmer — sauber verkabelt statt Funklöcher, damit Homeoffice und Streaming ohne Aussetzer laufen.</p>
       </article>
-      <article>
+      <article id="ersatzteile">
         <h3>Ersatzteile &amp; Zubehör</h3>
-        <p>Vom Leuchtmittel bis zum Gerätezubehör: Über unseren Großhandelszugang bestellen wir aus über 100.000 Artikeln — vieles ist am nächsten Tag da. <strong>Für Sie heißt das:</strong> ein Anruf statt stundenlanger Internetsuche.</p>
+        <p>Vom Leuchtmittel bis zum Gerätezubehör: Über unseren Großhandelszugang bestellen wir aus über 100.000 Artikeln — vieles ist am nächsten Tag da. Ein Anruf statt stundenlanger Internetsuche.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="ueber" id="ueber" aria-label="Über den Inhaber">
+<section class="ueber" id="ueber" aria-labelledby="ueber-h">
   <div class="wrap ueber-grid">
     <div>
       <span class="kicker">Über uns</span>
-      <h2>Ein Betrieb aus Aufhausen — mit eigenem Laden und Handschlag.</h2>
+      <h2 id="ueber-h">Ein Betrieb aus Aufhausen — mit eigenem Laden und Handschlag.</h2>
       <blockquote>„Bei uns kaufen Sie kein Gerät von einer Website — Sie kaufen es von einem Menschen, den Sie kennen. Und wenn etwas ist, stehe ich am nächsten Werktag wieder bei Ihnen im Laden."</blockquote>
-      <p class="sub">Elektro Kirschner ist ein inhabergeführter Elektrobetrieb mit eigenem Fachgeschäft an der Eichendorfer Straße in Aufhausen. Handwerk und Laden unter einem Dach: Elektroinstallation auf der Baustelle, Siemens- und Miele-Geräte im Geschäft, Reparatur und Ersatzteile dazu — Montag bis Samstag, ohne Termin-Hotline.</p>
+      <p class="sub">Elektro Kirschner ist ein inhabergeführter Elektrobetrieb mit eigenem Fachgeschäft an der Eichendorfer Straße in Aufhausen, im Landkreis Dingolfing-Landau, Niederbayern. Handwerk und Laden unter einem Dach: Elektroinstallation auf der Baustelle, Siemens- und Miele-Geräte im Geschäft, Reparatur und Ersatzteile dazu — Montag bis Samstag, ohne Termin-Hotline.</p>
       <!-- PRÜFEN: Zitat ist ein Vorschlag im Sinn des Betriebs — vor Livegang von Rudolf Kirschner jun. freigeben oder durch eigene Worte ersetzen -->
     </div>
     <div class="bild">
@@ -553,10 +635,9 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
   </div>
 </section>
 
-<section id="fachgeschaeft" aria-label="Fachgeschäft">
+<section id="fachgeschaeft" aria-labelledby="fachgeschaeft-h">
   <div class="wrap">
-    <span class="kicker">Fachgeschäft</span>
-    <h2>Kommen Sie einfach vorbei.</h2>
+    <h2 id="fachgeschaeft-h">Unser Fachgeschäft in Aufhausen – kommen Sie einfach vorbei</h2>
     <p class="sub">Eichendorfer Str. 15 in Aufhausen — Geräte anschauen, Fragen stellen, Reparatur abgeben. Montag bis Freitag 7:30–18:00 Uhr, Samstag 7:30–11:30 Uhr.</p>
     <div class="galerie">
       <figure>
@@ -588,13 +669,34 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         <figcaption>Waschmaschinen, Trockner und Kühlgeräte zum Anfassen</figcaption>
       </figure>
     </div>
+    <div class="galerie-aktion">
+      <p>Eichendorfer Str. 15 · Mo–Fr bis 18:00, Sa bis 11:30</p>
+      <div class="knoepfe">
+        <a class="btn btn-leer" href="https://www.google.com/maps/search/?api=1&amp;query=Elektro+Kirschner%2C+Eichendorfer+Str.+15%2C+94428+Eichendorf" rel="noopener" target="_blank">Route planen ↗</a>
+        <a class="btn btn-voll" href="tel:+499956395">☎ Vorher anrufen</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<section aria-label="Ablauf">
+<section class="orte" id="einzugsgebiet" aria-labelledby="orte-h">
+  <div class="wrap">
+    <h2 id="orte-h">Wo wir arbeiten</h2>
+    <p class="sub">Unser Laden steht in Aufhausen — im Einsatz sind wir im ganzen Umkreis:</p>
+    <ul class="orte-liste">
+      <li>Eichendorf mit Ortsteilen</li>
+      <li>Simbach bei Landau</li>
+      <li>Landau a. d. Isar</li>
+      <li>Pilsting</li>
+      <li>Arnstorf</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="ablauf-h">
   <div class="wrap">
     <span class="kicker">So läuft's</span>
-    <h2>In vier Schritten erledigt.</h2>
+    <h2 id="ablauf-h">In vier Schritten erledigt.</h2>
     <div class="ablauf">
       <article>
         <span class="nr">Schritt 1</span>
@@ -617,94 +719,130 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
         <p>Wir erledigen die Arbeit zum vereinbarten Termin — und sind danach weiter für Sie erreichbar.</p>
       </article>
     </div>
+    <p class="cta-zeile">Schritt 1 ist ein Anruf: <a href="tel:+499956395">☎ 09956 395</a> – oder kommen Sie einfach im Laden vorbei.</p>
   </div>
 </section>
 
-<section class="bewertungen" id="bewertungen" aria-label="Kundenbewertungen">
+<section class="bewertungen" id="bewertungen" aria-labelledby="bewertungen-h">
   <div class="wrap">
     <span class="kicker">Bewertungen</span>
-    <h2>Was Kunden über uns sagen.</h2>
-    <p class="sub"><span class="sterne" aria-hidden="true">★★★★★</span> <strong>4,7 von 5</strong> bei Google — 15 Bewertungen von Kunden aus der Region.</p>
+    <h2 id="bewertungen-h">Was Kunden über uns sagen.</h2>
+    <!-- TODO: Link zum Google-Unternehmensprofil ergänzen, sobald die Profil-Adresse vorliegt -->
+    <p class="sub"><span class="sterne" aria-hidden="true">★★★★<span class="halb">★</span></span> <strong>4,7 von 5</strong> bei Google — 15 Bewertungen von Kunden aus der Region.</p>
     <div class="karussell">
       <div class="karussell-fenster" aria-live="polite">
-        <div class="spur" id="spur"></div>
+        <!-- Neue Bewertung? Hier eine weitere <article class="karte"> ergänzen (die beiden „Spitze"-Karten bleiben am Ende).
+             Einzel-Sternwerte je Bewertung liegen nicht vor — deshalb keine Sternreihe je Karte.
+             Sobald ein Wert bekannt ist: <span class="sterne" aria-hidden="true">★★★★★</span> als erste Zeile der Karte einfügen. -->
+        <div class="spur" id="spur">
+          <article class="karte" data-index="0">
+            <p>„Ganz toller Kundenservice. Von der ersten Kontaktaufnahme bis zur Fertigstellung – einfach perfekt. Die Kommunikation war super freundlich, der Service schnell und die Qualität der Arbeit hervorragend. Vielen Dank !“</p>
+            <footer>Timm Erny · Google · vor 9 Monaten</footer>
+          </article>
+          <article class="karte" data-index="1">
+            <p>„super freundlich und bester Service im Umkreis“</p>
+            <footer>Martin Hengstmann · Google · vor 5 Jahren</footer>
+          </article>
+          <article class="karte" data-index="2">
+            <p>„Super Service und sehr freundlich“</p>
+            <footer>Bernhard Brunner · Google · vor 5 Jahren</footer>
+          </article>
+          <article class="karte" data-index="3">
+            <p>„Fachlich sehr gut pünktlich“</p>
+            <footer>Josef Eberhard · Google · vor 2 Jahren</footer>
+          </article>
+          <article class="karte" data-index="4">
+            <p>„Spitze“</p>
+            <footer>Günter · Google · vor 2 Jahren</footer>
+          </article>
+          <article class="karte" data-index="5">
+            <p>„Spitze“</p>
+            <footer>Dirk Singer · Google · vor 4 Jahren</footer>
+          </article>
+        </div>
       </div>
+      <div class="punkte" id="punkte" aria-hidden="true"></div>
       <div class="pfeile">
         <button type="button" id="zurueck" aria-label="Vorherige Bewertung">←</button>
         <button type="button" id="weiter" aria-label="Nächste Bewertung">→</button>
       </div>
     </div>
     <p class="google-hinweis">Alle Bewertungen stammen wortgetreu aus unserem Google-Unternehmensprofil.</p>
+    <p class="cta-zeile">Überzeugt? <a href="tel:+499956395">☎ 09956 395</a> – Sie sprechen direkt mit uns, nicht mit einer Zentrale.</p>
   </div>
 </section>
 
-<section class="marken" aria-label="Marken">
+<section class="marken" aria-labelledby="marken-h">
   <div class="wrap">
-    <p>Marken, die Sie bei uns bekommen</p>
+    <h2 id="marken-h">Marken, die Sie bei uns bekommen</h2>
     <div class="marken-reihe">
       <span>Siemens</span><span>Miele</span><span>Grundig</span><span>Panasonic</span><span>TechniSat</span><span>Kathrein</span>
     </div>
   </div>
 </section>
 
-<section class="faq" id="faq" aria-label="Häufige Fragen">
+<section class="faq" id="faq" aria-labelledby="faq-h">
   <div class="wrap">
-    <span class="kicker">Häufige Fragen</span>
-    <h2>Kurz beantwortet.</h2>
-    <details>
+    <h2 id="faq-h">Häufige Fragen – kurz beantwortet</h2>
+    <details id="faq-reparatur">
       <summary>Meine Waschmaschine ist kaputt — lohnt sich eine Reparatur noch?</summary>
       <p>Das sagen wir Ihnen ehrlich. Wir schauen uns das Gerät an und sagen Ihnen klar, ob eine Reparatur wirtschaftlich sinnvoll ist oder ob ein neues Gerät die bessere Wahl wäre. Als Fachgeschäft für Siemens- und Miele-Hausgeräte können wir beides: reparieren und beraten.</p>
     </details>
-    <details>
+    <details id="faq-termin">
       <summary>Wie schnell bekomme ich einen Termin?</summary>
       <p>Rufen Sie einfach unter <a href="tel:+499956395">09956 395</a> an oder kommen Sie im Geschäft in Aufhausen vorbei — Montag bis Freitag von 7:30 bis 18:00 Uhr, Samstag von 7:30 bis 11:30 Uhr. Wir besprechen Ihr Anliegen direkt und finden einen Termin, der passt.</p>
     </details>
-    <details>
+    <details id="faq-vor-ort">
       <summary>Kommen Sie auch zu uns nach Hause?</summary>
       <p>Ja. Wir sind in Eichendorf, Aufhausen und der gesamten Umgebung unterwegs — für Elektroinstallationen, Reparaturen vor Ort und Beratungstermine bei Ihnen zu Hause.</p>
     </details>
-    <details>
+    <details id="faq-ersatzteile">
       <summary>Führen Sie auch Ersatzteile und Zubehör?</summary>
       <p>Über unseren Großhandelszugang können wir aus über 100.000 Artikeln bestellen — vieles ist innerhalb von 24 Stunden da. Fragen Sie einfach im Geschäft nach.</p>
     </details>
-    <details>
+    <details id="faq-kosten">
       <summary>Was kostet eine Elektroinstallation oder Reparatur?</summary>
       <p>Das hängt vom Umfang ab — deshalb schauen wir uns Ihr Vorhaben erst an und Sie bekommen vorab eine klare Aussage zu den Kosten. Keine Überraschungen auf der Rechnung.</p>
     </details>
-    <details>
+    <details id="faq-photovoltaik">
       <summary>Beraten Sie auch zu Photovoltaik?</summary>
       <p>Ja. Wir beraten Sie zu Photovoltaik für Ihr Haus, prüfen was bei Ihnen möglich ist und kümmern uns um die fachgerechte Elektroinstallation der Anlage.</p>
     </details>
   </div>
 </section>
 
-<section class="kontakt" id="kontakt" aria-label="Kontakt">
+<section class="kontakt" id="kontakt" aria-labelledby="kontakt-h">
   <div class="wrap">
-    <span class="kicker">Kontakt</span>
-    <h2>Wir sind für Sie da.</h2>
+    <h2 id="kontakt-h">Kontakt – rufen Sie an, Sie sprechen direkt mit uns.</h2>
     <div class="kontakt-grid">
       <div class="kontakt-info">
         <dl>
-          <dt>Telefon</dt>
-          <dd><strong><a href="tel:+499956395">09956 395</a></strong></dd>
-          <dt>E-Mail</dt>
-          <dd><a href="mailto:info@elektro-rudolf-kirschner.de">info@elektro-rudolf-kirschner.de</a></dd>
           <dt>Adresse</dt>
-          <dd>Elektro Kirschner<br>Eichendorfer Str. 15<br>94428 Eichendorf-Aufhausen<br>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Elektro+Kirschner%2C+Eichendorfer+Str.+15%2C+94428+Eichendorf" rel="noopener" target="_blank">Route in Google Maps öffnen ↗</a></dd>
+          <dd>Elektro Kirschner<br>Eichendorfer Str. 15<br>94428 Eichendorf-Aufhausen</dd>
           <dt>Öffnungszeiten</dt>
           <dd>Mo–Fr 7:30–18:00 Uhr<br>Sa 7:30–11:30 Uhr</dd>
         </dl>
+        <div class="kontakt-knoepfe">
+          <a class="btn btn-voll" href="tel:+499956395">☎ 09956 395 anrufen</a>
+          <a class="btn btn-leer" href="mailto:info@elektro-rudolf-kirschner.de">E-Mail schreiben</a>
+          <a class="btn btn-leer" href="https://www.google.com/maps/search/?api=1&amp;query=Elektro+Kirschner%2C+Eichendorfer+Str.+15%2C+94428+Eichendorf" rel="noopener" target="_blank">Route planen ↗</a>
+        </div>
       </div>
       <form class="formular" id="kontaktformular">
         <label for="f-name">Ihr Name</label>
         <input id="f-name" name="name" type="text" autocomplete="name" required>
         <label for="f-tel">Ihre Telefonnummer</label>
-        <input id="f-tel" name="tel" type="tel" autocomplete="tel">
-        <label for="f-nachricht">Worum geht es?</label>
-        <textarea id="f-nachricht" name="nachricht" rows="5" required></textarea>
-        <button class="btn btn-voll" type="submit">Nachricht per E-Mail senden</button>
-        <p class="hinweis">Der Klick öffnet Ihr E-Mail-Programm mit der fertigen Nachricht an info@elektro-rudolf-kirschner.de — es werden keine Daten über diese Website übertragen.</p>
+        <input id="f-tel" name="tel" type="tel" autocomplete="tel" required>
+        <label for="f-nachricht">Worum geht es? (optional)</label>
+        <textarea id="f-nachricht" name="nachricht" rows="5"></textarea>
+        <p class="hinweis">Der Knopf öffnet Ihr E-Mail-Programm. Klappt das bei Ihnen nicht, rufen Sie uns einfach an: <a href="tel:+499956395">09956 395</a>.</p>
+        <div class="formular-knoepfe">
+          <button class="btn btn-voll" type="submit">E-Mail-Programm öffnen</button>
+          <a class="btn btn-leer" href="tel:+499956395">☎ 09956 395 anrufen</a>
+        </div>
+        <!-- TODO: Echter Formularversand (ohne E-Mail-Programm) ist bewusst NICHT eingebaut.
+             Falls gewünscht: Formular-Dienst oder Server-Endpunkt nötig — dann müssen die
+             Datenschutzerklärung und ggf. ein Auftragsverarbeitungsvertrag angepasst werden. -->
       </form>
     </div>
   </div>
@@ -723,33 +861,25 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
 </footer>
 
 <div class="anruf-leiste">
-  <a class="btn btn-voll" href="tel:+499956395">☎ Anrufen</a>
-  <a class="btn btn-leer" href="#kontakt">Nachricht</a>
+  <a class="btn btn-voll" href="tel:+499956395">☎ 09956 395</a>
+  <a class="btn btn-leer" href="#kontakt">Zum Kontakt</a>
 </div>
 
 <script>
-// Neue Bewertung? Hier ein Objekt ergänzen.
-const bewertungen = [
-  { text: "Ganz toller Kundenservice. Von der ersten Kontaktaufnahme bis zur Fertigstellung – einfach perfekt. Die Kommunikation war super freundlich, der Service schnell und die Qualität der Arbeit hervorragend. Vielen Dank !", name: "Timm Erny", info: "Google · vor 9 Monaten" },
-  { text: "super freundlich und bester Service im Umkreis", name: "Martin Hengstmann", info: "Google · vor 5 Jahren" },
-  { text: "Super Service und sehr freundlich", name: "Bernhard Brunner", info: "Google · vor 5 Jahren" },
-  { text: "Fachlich sehr gut pünktlich", name: "Josef Eberhard", info: "Google · vor 2 Jahren" },
-  { text: "Spitze", name: "Günter", info: "Google · vor 2 Jahren (aus dem Englischen übersetzt)" },
-  { text: "Spitze", name: "Dirk Singer", info: "Google · vor 4 Jahren (aus dem Englischen übersetzt)" }
-];
-
+// Die Bewertungskarten stehen als statisches HTML in <div class="spur" id="spur"> —
+// dieses Skript erzeugt keine Karten mehr, es schiebt nur die vorhandenen weiter.
 (function () {
   const spur = document.getElementById('spur');
-  bewertungen.forEach(b => {
-    const el = document.createElement('article');
-    el.className = 'karte';
-    const sterne = document.createElement('span');
-    sterne.className = 'sterne'; sterne.setAttribute('aria-hidden', 'true'); sterne.textContent = '★★★★★';
-    const p = document.createElement('p'); p.textContent = '„' + b.text + '“';
-    const f = document.createElement('footer'); f.textContent = b.name + ' · ' + b.info;
-    el.append(sterne, p, f);
-    spur.appendChild(el);
-  });
+
+  // Positionspunkte: ein Punkt je Karte, aktiv = Karte ganz links
+  const punkte = document.getElementById('punkte');
+  const anzahl = spur.children.length;
+  for (let i = 0; i < anzahl; i++) punkte.appendChild(document.createElement('span'));
+  function punkteAktualisieren() {
+    const aktiv = Number(spur.children[0].dataset.index || 0);
+    Array.from(punkte.children).forEach((p, i) => p.classList.toggle('aktiv', i === aktiv));
+  }
+  punkteAktualisieren();
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
@@ -771,6 +901,7 @@ const bewertungen = [
       void spur.offsetWidth;
       spur.style.transition = UEBERGANG;
       laeuft = false;
+      punkteAktualisieren();
     });
   }
 
@@ -788,10 +919,11 @@ const bewertungen = [
     spur.addEventListener('transitionend', function ende() {
       spur.removeEventListener('transitionend', ende);
       laeuft = false;
+      punkteAktualisieren();
     });
   }
 
-  function starte() { stoppe(); timer = setInterval(schritt, 5000); }
+  function starte() { stoppe(); timer = setInterval(schritt, 8000); }
   function stoppe() { if (timer) { clearInterval(timer); timer = null; } }
 
   document.getElementById('weiter').addEventListener('click', () => { schritt(); starte(); });
@@ -805,15 +937,65 @@ const bewertungen = [
   document.addEventListener('visibilitychange', () => { document.hidden ? stoppe() : starte(); });
 
   let startX = null;
-  fenster.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  fenster.addEventListener('touchstart', e => { stoppe(); startX = e.touches[0].clientX; }, { passive: true });
   fenster.addEventListener('touchend', e => {
-    if (startX === null) return;
-    const dx = e.changedTouches[0].clientX - startX;
-    if (Math.abs(dx) > 40) { dx < 0 ? schritt() : zurueckSchritt(); starte(); }
-    startX = null;
+    if (startX !== null) {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) { dx < 0 ? schritt() : zurueckSchritt(); }
+      startX = null;
+    }
+    starte();
   }, { passive: true });
 
   starte();
+})();
+
+// Öffnungsstatus — berechnet aus den openingHoursSpecification im JSON-LD
+(function () {
+  const el = document.getElementById('offen-status');
+  if (!el) return;
+  let spec = null;
+  document.querySelectorAll('script[type="application/ld+json"]').forEach(s => {
+    if (spec) return;
+    try {
+      const d = JSON.parse(s.textContent);
+      if (d.openingHoursSpecification) spec = d.openingHoursSpecification;
+    } catch (fehler) { /* ungültiges JSON ignorieren */ }
+  });
+  if (!spec) return;
+  const tage = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const deutsch = { Sunday:'Sonntag', Monday:'Montag', Tuesday:'Dienstag', Wednesday:'Mittwoch', Thursday:'Donnerstag', Friday:'Freitag', Saturday:'Samstag' };
+  function fenster(tag) {
+    for (const sp of spec) {
+      const dows = Array.isArray(sp.dayOfWeek) ? sp.dayOfWeek : [sp.dayOfWeek];
+      if (dows.includes(tag)) {
+        const o = sp.opens.split(':'), c = sp.closes.split(':');
+        return {
+          von: Number(o[0]) * 60 + Number(o[1]),
+          bis: Number(c[0]) * 60 + Number(c[1]),
+          oeffnet: sp.opens.replace(/^0/, ''),
+          schliesst: sp.closes.replace(/^0/, '')
+        };
+      }
+    }
+    return null;
+  }
+  const jetzt = new Date();
+  const minuten = jetzt.getHours() * 60 + jetzt.getMinutes();
+  const heute = fenster(tage[jetzt.getDay()]);
+  if (heute && minuten >= heute.von && minuten < heute.bis) {
+    el.textContent = 'Jetzt geöffnet – bis ' + heute.schliesst;
+    return;
+  }
+  for (let i = 0; i <= 7; i++) {
+    const idx = (jetzt.getDay() + i) % 7;
+    const f = fenster(tage[idx]);
+    if (f && !(i === 0 && minuten >= f.von)) {
+      const wann = i === 0 ? 'heute' : (i === 1 ? 'morgen' : deutsch[tage[idx]]);
+      el.textContent = 'Jetzt geschlossen – wieder ab ' + wann + ' ' + f.oeffnet;
+      return;
+    }
+  }
 })();
 
 document.getElementById('kontaktformular').addEventListener('submit', function (e) {
@@ -821,7 +1003,7 @@ document.getElementById('kontaktformular').addEventListener('submit', function (
   const name = document.getElementById('f-name').value.trim();
   const tel = document.getElementById('f-tel').value.trim();
   const nachricht = document.getElementById('f-nachricht').value.trim();
-  const body = 'Name: ' + name + '\n' + (tel ? 'Telefon: ' + tel + '\n' : '') + '\n' + nachricht;
+  const body = 'Name: ' + name + '\nTelefon: ' + tel + (nachricht ? '\n\n' + nachricht : '');
   window.location.href = 'mailto:info@elektro-rudolf-kirschner.de'
     + '?subject=' + encodeURIComponent('Anfrage über die Website')
     + '&body=' + encodeURIComponent(body);
