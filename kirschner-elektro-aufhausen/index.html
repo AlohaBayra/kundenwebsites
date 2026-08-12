@@ -27,8 +27,9 @@
 <meta name="twitter:description" content="Elektroinstallation, Photovoltaik, Siemens- &amp; Miele-Hausgeräte mit Reparaturservice — Fachgeschäft in Eichendorf-Aufhausen.">
 <meta name="twitter:image" content="https://alohabayra.github.io/kundenwebsites/kirschner-elektro-aufhausen/assets/laden-front.jpg">
 <!-- TODO (JSON-LD, Angaben fehlen bewusst — kommen vom Betrieb bzw. nach Anlage des Google-Profils):
-     geo (Koordinaten), hasMap (Google-Maps-Link des Unternehmensprofils),
-     priceRange, paymentAccepted (Zahlarten im Laden), foundingDate (Gründungsjahr) -->
+     priceRange, paymentAccepted (Zahlarten im Laden), foundingDate (Gründungsjahr).
+     geo ist eingetragen (Nominatim/OSM, gebäudegenauer Treffer „Elektro Kirschner", 12.08.2026);
+     hasMap zeigt auf den Routen-Link — nach Anlage des Google-Profils auf dessen Profil-URL umstellen. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,6 +53,8 @@
     "postalCode": "94428",
     "addressCountry": "DE"
   },
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.6152501, "longitude": 12.7617179 },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Elektro+Kirschner%2C+Eichendorfer+Str.+15%2C+94428+Eichendorf",
   "brand": [
     { "@type": "Brand", "name": "Siemens" },
     { "@type": "Brand", "name": "Miele" },
@@ -315,15 +318,17 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
 @media(max-width:560px){.ablauf{grid-template-columns:1fr}}
 
 /* ---------- Bewertungen ---------- */
-.bewertungen{background:var(--flaeche)}
-.karussell{position:relative;margin-top:36px}
+.bewertungen{background:var(--flaeche);padding:64px 0}
+.karussell{position:relative;margin-top:28px}
 .karussell-fenster{overflow:hidden}
-.spur{display:flex;flex-wrap:nowrap;gap:24px}
+.spur{display:flex;flex-wrap:nowrap;align-items:stretch;gap:24px}
 .karte{
   flex:0 0 calc((100% - 48px)/3);background:#fff;border:1px solid var(--linie);
-  border-radius:16px;padding:26px 26px 22px;display:flex;flex-direction:column;
+  border-radius:16px;padding:18px 20px 16px;display:flex;flex-direction:column;
+  justify-content:center;
 }
-.karte p{color:var(--text);font-size:17px;margin:10px 0 16px;flex:1}
+.k-sterne{font-size:15px}
+.karte p{color:var(--text);font-size:17px;margin:6px 0 10px}
 .karte footer{color:var(--grau);font-size:14.5px}
 .pfeile{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
 .pfeile button{
@@ -332,7 +337,7 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
   transition:border-color .4s cubic-bezier(.16,1,.3,1);
 }
 .pfeile button:hover{border-color:var(--akzent)}
-.punkte{display:flex;gap:8px;justify-content:center;margin-top:22px}
+.punkte{display:flex;gap:8px;justify-content:center;margin-top:14px}
 .punkte span{width:8px;height:8px;border-radius:50%;background:#d0d0d4;transition:background .4s cubic-bezier(.16,1,.3,1)}
 .punkte span.aktiv{background:var(--akzent)}
 @media(max-width:1000px){.karte{flex:0 0 calc((100% - 24px)/2)}}
@@ -346,11 +351,33 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
 
 /* ---------- Marken ---------- */
 .marken{padding:56px 0;border-top:1px solid var(--linie)}
-.marken-reihe{
-  display:flex;gap:16px 44px;flex-wrap:wrap;justify-content:center;align-items:center;
-  color:var(--grau);font-size:19px;font-weight:600;letter-spacing:.02em;
+.marken h2{text-align:center;color:var(--grau);font-size:17px;font-weight:600;letter-spacing:.02em;margin-bottom:10px}
+.marken-sub{text-align:center;color:var(--sekundaer);font-size:16px;max-width:560px;margin:0 auto 34px}
+.marken-raster{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:repeat(6,1fr);gap:28px 32px;align-items:start;
 }
-.marken h2{text-align:center;color:var(--grau);font-size:17px;font-weight:600;letter-spacing:.02em;margin-bottom:22px}
+.marken-raster li{display:flex;flex-direction:column;align-items:center;gap:10px}
+.marken-logo{height:40px;display:flex;align-items:center;justify-content:center}
+.marken-logo img{width:auto;object-fit:contain}
+/* Logos NICHT rechnerisch gleich hoch, sondern optisch angeglichen — je Marke feinjustiert */
+.logo-siemens{height:25px}
+.logo-miele{height:36px}
+.logo-grundig{height:19px}
+.logo-technisat{height:23px}
+.marken-textmarke{color:var(--sekundaer);font-size:19px;font-weight:600;letter-spacing:.02em}
+.marken-name{color:var(--grau);font-size:13px}
+.nur-text .marken-name{display:none}
+@media(max-width:900px){.marken-raster{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){
+  .marken-raster{grid-template-columns:repeat(2,1fr);gap:24px 20px}
+  .marken-logo{height:34px}
+  .logo-siemens{height:21px}
+  .logo-miele{height:30px}
+  .logo-grundig{height:16px}
+  .logo-technisat{height:19px}
+  .marken-textmarke{font-size:17px}
+}
 
 /* ---------- FAQ ---------- */
 .faq details{border-bottom:1px solid var(--linie);padding:4px 0}
@@ -376,6 +403,14 @@ h1{font-size:clamp(38px,4.2vw,60px);line-height:1.04;letter-spacing:-.033em;font
 .kontakt-knoepfe{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
 .kontakt-knoepfe .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
 @media(max-width:600px){.kontakt-knoepfe{flex-direction:column}.kontakt-knoepfe .btn{width:100%}}
+.karte-link{display:block;margin-top:26px;text-decoration:none}
+.karte-adresse{display:block;color:var(--grau);font-size:14px;margin-bottom:8px}
+.karte-rahmen{position:relative;display:block;border:1px solid var(--linie);border-radius:16px;overflow:hidden;background:#fff}
+.karte-rahmen img{display:block;width:100%;height:auto}
+.karte-hover{position:absolute;right:12px;bottom:12px;background:rgba(255,255,255,.92);color:var(--akzent);font-size:14px;font-weight:600;padding:6px 12px;border-radius:980px;opacity:0;transition:opacity .3s;pointer-events:none}
+.karte-link:hover .karte-hover,.karte-link:focus-visible .karte-hover{opacity:1}
+.osm-hinweis{color:var(--grau);font-size:12.5px;margin-top:6px}
+.osm-hinweis a{color:var(--grau)}
 .formular{background:#fff;border:1px solid var(--linie);border-radius:18px;padding:30px}
 .formular label{display:block;font-size:15px;font-weight:600;margin:16px 0 6px}
 .formular label:first-of-type{margin-top:0}
@@ -451,7 +486,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
       <!-- TODO: Link zum Google-Unternehmensprofil ergänzen, sobald die Profil-Adresse vorliegt -->
       <p class="hero-vertrauen">
         <span class="sterne" aria-hidden="true">★★★★<span class="halb">★</span></span>
-        <strong>4,7 von 5</strong> bei Google (15&nbsp;Bewertungen) · Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr
+        <strong>4,7 von 5</strong> bei Google · Mo–Fr 7:30–18:00 Uhr, Sa 7:30–11:30 Uhr
       </p>
       <p class="offen-status" id="offen-status"></p>
     </div>
@@ -501,7 +536,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
     <div>
       <!-- TODO: Link zum Google-Unternehmensprofil ergänzen, sobald die Profil-Adresse vorliegt -->
       <h3>★ 4,7 bei Google</h3>
-      <p>15 Bewertungen — von Kunden aus der Region.</p>
+      <p>Bewertungen von Kunden aus der Region.</p>
     </div>
     <div>
       <h3>Siemens &amp; Miele</h3>
@@ -728,36 +763,43 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
     <span class="kicker">Bewertungen</span>
     <h2 id="bewertungen-h">Was Kunden über uns sagen.</h2>
     <!-- TODO: Link zum Google-Unternehmensprofil ergänzen, sobald die Profil-Adresse vorliegt -->
-    <p class="sub"><span class="sterne" aria-hidden="true">★★★★<span class="halb">★</span></span> <strong>4,7 von 5</strong> bei Google — 15 Bewertungen von Kunden aus der Region.</p>
+    <p class="sub"><span class="sterne" aria-hidden="true">★★★★<span class="halb">★</span></span> <strong>4,7 von 5</strong> bei Google — Bewertungen von Kunden aus der Region.</p>
     <div class="karussell">
       <div class="karussell-fenster" aria-live="polite">
         <!-- Neue Bewertung? Hier eine weitere <article class="karte"> ergänzen (die beiden „Spitze"-Karten bleiben am Ende).
-             Einzel-Sternwerte je Bewertung liegen nicht vor — deshalb keine Sternreihe je Karte.
-             Sobald ein Wert bekannt ist: <span class="sterne" aria-hidden="true">★★★★★</span> als erste Zeile der Karte einfügen. -->
+             Sternwerte je Bewertung am 12.08.2026 direkt am Google-Unternehmensprofil verifiziert — alle sechs: 5 von 5.
+             Eine neue Bewertung bekommt ihre Sternreihe NUR, wenn der Wert am Profil nachgeprüft wurde;
+             ist der Wert nicht verifizierbar, bleibt die Karte ohne Sternreihe (nicht schätzen, nicht aufrunden). -->
         <div class="spur" id="spur">
           <article class="karte" data-index="0">
+            <span class="sterne k-sterne" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
             <p>„Ganz toller Kundenservice. Von der ersten Kontaktaufnahme bis zur Fertigstellung – einfach perfekt. Die Kommunikation war super freundlich, der Service schnell und die Qualität der Arbeit hervorragend. Vielen Dank !“</p>
-            <footer>Timm Erny · Google · vor 9 Monaten</footer>
+            <footer>Timm Erny · Google</footer>
           </article>
           <article class="karte" data-index="1">
+            <span class="sterne k-sterne" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
             <p>„super freundlich und bester Service im Umkreis“</p>
-            <footer>Martin Hengstmann · Google · vor 5 Jahren</footer>
+            <footer>Martin Hengstmann · Google</footer>
           </article>
           <article class="karte" data-index="2">
+            <span class="sterne k-sterne" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
             <p>„Super Service und sehr freundlich“</p>
-            <footer>Bernhard Brunner · Google · vor 5 Jahren</footer>
+            <footer>Bernhard Brunner · Google</footer>
           </article>
           <article class="karte" data-index="3">
+            <span class="sterne k-sterne" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
             <p>„Fachlich sehr gut pünktlich“</p>
-            <footer>Josef Eberhard · Google · vor 2 Jahren</footer>
+            <footer>Josef Eberhard · Google</footer>
           </article>
           <article class="karte" data-index="4">
+            <span class="sterne k-sterne" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
             <p>„Spitze“</p>
-            <footer>Günter · Google · vor 2 Jahren</footer>
+            <footer>Günter · Google</footer>
           </article>
           <article class="karte" data-index="5">
+            <span class="sterne k-sterne" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
             <p>„Spitze“</p>
-            <footer>Dirk Singer · Google · vor 4 Jahren</footer>
+            <footer>Dirk Singer · Google</footer>
           </article>
         </div>
       </div>
@@ -772,12 +814,29 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
   </div>
 </section>
 
+<!-- PRÜFEN: Markenlogos dürfen als Fachhändler zur Kennzeichnung des Sortiments
+     verwendet werden. Vor Livegang bestätigen lassen, dass Kirschner autorisierter
+     Händler dieser Marken ist, und die Nutzungsbedingungen des jeweiligen
+     Markenportals prüfen. Quelle jedes Logos in OFFENE_FRAGEN.md dokumentiert.
+     Panasonic und Kathrein stehen bewusst als Text: für Panasonic ist öffentlich nur das
+     Konzernlogo „Panasonic Group" verfügbar (Produktwortmarke hinter Partner-Login),
+     für Kathrein existiert kein öffentliches Presse-/Markenportal. -->
 <section class="marken" aria-labelledby="marken-h">
   <div class="wrap">
     <h2 id="marken-h">Marken, die Sie bei uns bekommen</h2>
-    <div class="marken-reihe">
-      <span>Siemens</span><span>Miele</span><span>Grundig</span><span>Panasonic</span><span>TechniSat</span><span>Kathrein</span>
-    </div>
+    <!-- TEXTVORSCHLAG: Der Satz verallgemeinert „Beratung, Anschluss, Reparatur" auf alle sechs
+         Marken — belegt ist das auf der Seite bisher nur für die Hausgeräte (Siemens/Miele).
+         Vom Betrieb bestätigen lassen, ob das auch für TV/SAT (Grundig, Panasonic, TechniSat,
+         Kathrein) so gilt. -->
+    <p class="marken-sub">Geräte dieser Marken bekommen Sie bei uns im Laden in Aufhausen — mit Beratung, Anschluss vor Ort und Reparatur, wenn doch einmal etwas ist.</p>
+    <ul class="marken-raster">
+      <li><span class="marken-logo"><img src="assets/marken/siemens.svg" width="121" height="20" loading="lazy" alt="Logo Siemens" class="logo-siemens"></span><span class="marken-name">Siemens</span></li>
+      <li><span class="marken-logo"><img src="assets/marken/miele.svg" width="100" height="38" loading="lazy" alt="Logo Miele" class="logo-miele"></span><span class="marken-name">Miele</span></li>
+      <li><span class="marken-logo"><img src="assets/marken/grundig.png" width="995" height="116" loading="lazy" alt="Logo Grundig" class="logo-grundig"></span><span class="marken-name">Grundig</span></li>
+      <li class="nur-text"><span class="marken-logo"><span class="marken-textmarke">Panasonic</span></span><span class="marken-name">Panasonic</span></li>
+      <li><span class="marken-logo"><img src="assets/marken/technisat.svg" width="452" height="71" loading="lazy" alt="Logo TechniSat" class="logo-technisat"></span><span class="marken-name">TechniSat</span></li>
+      <li class="nur-text"><span class="marken-logo"><span class="marken-textmarke">Kathrein</span></span><span class="marken-name">Kathrein</span></li>
+    </ul>
   </div>
 </section>
 
@@ -827,6 +886,24 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
           <a class="btn btn-leer" href="mailto:info@elektro-rudolf-kirschner.de">E-Mail schreiben</a>
           <a class="btn btn-leer" href="https://www.google.com/maps/search/?api=1&amp;query=Elektro+Kirschner%2C+Eichendorfer+Str.+15%2C+94428+Eichendorf" rel="noopener" target="_blank">Route planen ↗</a>
         </div>
+        <!-- Statische Standortkarte: einmalig beim Bauen aus OpenStreetMap-Daten erzeugt
+             (assets/standort-karte.png, Marker auf 48.6152501/12.7617179, Nominatim-Treffer
+             gebäudegenau „Elektro Kirschner"). Zur Laufzeit wird KEIN externer Dienst geladen;
+             der Klick öffnet nur den Routen-Link. Die Attribution-Zeile darunter ist rechtlich
+             verpflichtend (ODbL) und darf nicht entfernt werden. -->
+        <a class="karte-link" href="https://www.google.com/maps/search/?api=1&amp;query=Elektro+Kirschner%2C+Eichendorfer+Str.+15%2C+94428+Eichendorf" rel="noopener" target="_blank">
+          <span class="karte-adresse">Eichendorfer Str. 15 · 94428 Eichendorf-Aufhausen</span>
+          <span class="karte-rahmen">
+            <picture>
+              <source media="(max-width:600px)" srcset="assets/standort-karte-mobil.webp" type="image/webp">
+              <source media="(max-width:600px)" srcset="assets/standort-karte-mobil.png">
+              <source srcset="assets/standort-karte.webp" type="image/webp">
+              <img src="assets/standort-karte.png" width="1280" height="720" loading="lazy" alt="Karte: Standort Elektro Kirschner, Eichendorfer Str. 15 in Eichendorf-Aufhausen">
+            </picture>
+            <span class="karte-hover" aria-hidden="true">Route planen ↗</span>
+          </span>
+        </a>
+        <p class="osm-hinweis">Kartendaten © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap-Mitwirkende</a></p>
       </div>
       <form class="formular" id="kontaktformular">
         <label for="f-name">Ihr Name</label>
@@ -923,7 +1000,7 @@ footer.seite{padding:40px 0 110px;border-top:1px solid var(--linie);color:var(--
     });
   }
 
-  function starte() { stoppe(); timer = setInterval(schritt, 8000); }
+  function starte() { stoppe(); timer = setInterval(schritt, 6000); }
   function stoppe() { if (timer) { clearInterval(timer); timer = null; } }
 
   document.getElementById('weiter').addEventListener('click', () => { schritt(); starte(); });

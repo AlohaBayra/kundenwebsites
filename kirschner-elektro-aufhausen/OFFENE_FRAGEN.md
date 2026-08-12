@@ -33,8 +33,9 @@ Fristen, Qualifikationen, Notdienst, Mitarbeiterzahl und Gründungsjahr kommen v
 
 - [ ] **Google-Unternehmensprofil anlegen bzw. übernehmen** und den Profil-Link an den
       drei vorbereiteten Stellen eintragen (`index.html:451`, `index.html:502`,
-      `index.html:730`). Daraus ergeben sich auch geo-Koordinaten und der
-      hasMap-Link fürs JSON-LD (`index.html:29`).
+      `index.html:730`). Die geo-Koordinaten stehen bereits im JSON-LD
+      (OpenStreetMap/Nominatim, gebäudegenau, 12.08.2026); `hasMap` zeigt vorerst auf
+      den Routen-Link und wird dann auf die Profil-URL umgestellt (`index.html:29`).
 - [ ] **Einheitlichen Firmennamen durchsetzen** — im Netz kursieren mehrere
       Schreibweisen des Betriebsnamens; überall auf eine Form bringen (Verzeichnisse,
       Profile, Briefpapier).
@@ -62,6 +63,27 @@ Fristen, Qualifikationen, Notdienst, Mitarbeiterzahl und Gründungsjahr kommen v
       gesetzliche Berufsbezeichnung; aus keiner öffentlichen Quelle belegbar, muss vom
       Betrieb kommen. Impressum vor Livegang von der HWK bzw. rechtlich gegenprüfen
       lassen. (`impressum.html:51`, `impressum.html:52`)
+- [ ] **Markenlogos: Händler-Autorisierung und Portal-Bedingungen prüfen** — die Logos
+      in der Marken-Sektion dürfen als Fachhändler zur Sortimentskennzeichnung genutzt
+      werden; vor Livegang bestätigen lassen, dass der Betrieb autorisierter Händler der
+      jeweiligen Marke ist, und die Nutzungsbedingungen der Quelle prüfen. Quellen
+      (jeweils offizielles Hersteller-Portal, Abruf 12.08.2026):
+      - Siemens (Hausgeräte, SVG): siemens-home.bsh-group.com —
+        `https://www.siemens-home.bsh-group.com/marketing-app/_next/static/media/siemens.93dec140.svg`
+      - Miele (SVG, offizielles Logo-Paket für Drittanbieter): developer.miele.com/docs/downloads —
+        `https://developer.miele.com/docs/third-party-api/logo_package.zip` (Datei `Miele_Logo_M_Red_sRGB.svg`)
+      - Grundig (PNG, transparenter Rand der Quelldatei entfernt, Bildmarke unverändert):
+        Beko-Corporate-Pressroom (Markeninhaber) —
+        `https://www.bekocorporate.com/media/w5kjf4eh/grundig_logo_light.png`
+      - TechniSat (SVG): technisat.de/presse —
+        `https://www.technisat.de/media/a9/32/6a/1757941131/logo_TechniSat.svg`
+      - **Panasonic: bewusst nur Text** — öffentlich verfügbar ist nur das Konzernlogo
+        „Panasonic Group" (news.panasonic.com); die reine Produktwortmarke liegt hinter
+        dem Partner-Login des Panasonic-Branding-Portals. Falls der Betrieb Händler-Zugang
+        hat: Logo dort beziehen, dann einbauen.
+      - **Kathrein: bewusst nur Text** — kein öffentliches Presse-/Markenportal
+        (Medien-Center von kathrein-ds.com liefert 404); Logo ggf. per Anfrage an
+        info@kathrein-ds.com beschaffen.
 - [ ] **Datenschutz: Hosting-Abschnitt** an den endgültigen Hoster der echten Domain
       anpassen. (`datenschutz.html:44`)
 - [ ] **Falls Formularversand kommt (siehe A):** Datenschutzerklärung erweitern und
